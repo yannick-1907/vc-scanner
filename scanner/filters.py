@@ -46,9 +46,14 @@ ENTRY_TERMS = [
 # "Associate" oder "Analyst" im Titel steht.
 SENIOR_TERMS = [
     "senior", "lead", "principal", "head of", "director", "vp ", "vice president",
-    "partner", "chief", "manager", "managing", "expert", "staff",
-    "(sr", "sr.", "ii", "iii",
+    "partner", "chief", "staff", "(sr", "sr.", "ii", "iii",
 ]
+# Schwache Senior-Signale: "Manager" allein heisst nicht Senior ("Junior Fund Reporting Manager").
+SOFT_SENIOR_TERMS = ["manager", "managing", "expert"]
+# Diese Begriffe im Titel heben ein schwaches Senior-Signal auf.
+JUNIOR_OVERRIDE = ["junior", "trainee", "graduate", "absolvent"]
+# Diese heben auch harte Senior-Signale auf ("Senior Investment Intern").
+INTERN_OVERRIDE = ["praktikum", "praktikant", "intern", "internship", "werkstudent", "working student"]
 
 
 def _norm(s: str) -> str:
@@ -76,11 +81,12 @@ def is_entry_level(job: dict) -> bool:
     if not title:
         return False
     # Senior-Ausschluss zuerst
-    if _contains_any(f" {title} ", SENIOR_TERMS):
-        # Ausnahme: "Junior ... Senior..." kommt praktisch nicht vor; wenn doch
-        # ein Praktikum/Intern explizit drinsteht, trotzdem behalten.
-        if not _contains_any(title, ["praktikum", "praktikant", "intern", "internship", "werkstudent", "working student"]):
-            return False
+    if _contains_any(f" {title} ", SENIOR_TERMS) and not _contains_any(title, INTERN_OVERRIDE):
+        return False
+    if _contains_any(f" {title} ", SOFT_SENIOR_TERMS) and not _contains_any(
+        title, INTERN_OVERRIDE + JUNIOR_OVERRIDE
+    ):
+        return False
     return _contains_any(title, ENTRY_TERMS)
 
 

@@ -192,4 +192,6 @@ NOT_SCANNABLE: list[dict] = [
     {"name": "Wayra", "website": "https://wayra.com"},
     {"name": "White Star Capital", "website": "https://whitestarcapital.com"},
     {"name": "Yabeo Capital", "website": "https://ceracare.co.uk/"},
+    {"name": "Revent", "website": "https://careers.revent.vc/jobs"},  # Jobboard laedt per JavaScript
+    {"name": "10x Founders", "website": "https://10xfounders.jobs.personio.com/"},  # Personio-XML-Feed deaktiviert
 ]

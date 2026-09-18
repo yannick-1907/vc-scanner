@@ -504,6 +504,27 @@ def careerpage(slug: str) -> list[dict]:
             "url": target,
             "department": "",
         }
+    # Zweiter Durchgang: Manche Seiten (z.B. Wix) legen Stellen als JSON-Daten im HTML ab statt als
+    # Links. Gesucht werden Objekte mit "title" (+ optional "location"/"url") und Geschlechtsmarker.
+    raw = resp.text.replace("\\/", "/")
+    for m in re.finditer(r'"title":"([^"]{6,160})"', raw):
+        title = _clean_title(m.group(1).replace("\\n", " ").replace("\\u0026", "&"))
+        if not (8 <= len(title) <= 140) or not _ENTRY.search(title) or not _GENDER.search(title):
+            continue
+        if len(title.split()) < 2:
+            continue
+        seg = raw[max(0, m.start() - 900): m.end() + 200]
+        loc = re.findall(r'"location":"([^"]*)"', seg)
+        url = re.findall(r'"url":"(https?://[^"]*)"', seg)
+        target = url[-1] if url else resp.url
+        if title.islower():
+            title = " ".join(w if w.startswith("(") else w.capitalize() for w in title.split())
+        location = loc[-1].title() if loc and loc[-1] else page_city
+        job_id = "careerpage:" + hashlib.md5(f"{target}|{title}".encode()).hexdigest()[:12]
+        jobs.setdefault(
+            job_id,
+            {"id": job_id, "title": title, "location": location, "url": target, "department": ""},
+        )
     return list(jobs.values())
 
 

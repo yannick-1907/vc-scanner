@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-18T22:54:14.613205+00:00",
-  "count": 30,
+  "updated_at": "2026-09-18T23:17:19.268490+00:00",
+  "count": 39,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -765,12 +765,6 @@
       "scannable": true
     },
     {
-      "name": "Revent",
-      "website": "https://careers.revent.vc/jobs",
-      "mode": "page",
-      "scannable": true
-    },
-    {
       "name": "Richmond View Ventures",
       "website": "https://rvv.tv/jobs",
       "mode": "feed",
@@ -937,9 +931,123 @@
       "website": "https://yzr-capital.com/careers",
       "mode": "feed",
       "scannable": true
+    },
+    {
+      "name": "LEA Partners",
+      "website": "https://leapartners.jobs.personio.com/",
+      "mode": "feed",
+      "scannable": true
+    },
+    {
+      "name": "T.Capital",
+      "website": "https://t-capital.breezy.hr/",
+      "mode": "feed",
+      "scannable": true
+    },
+    {
+      "name": "xdeck",
+      "website": "https://join.com/companies/xdeck",
+      "mode": "feed",
+      "scannable": true
+    },
+    {
+      "name": "DvH Ventures (Dieter von Holtzbrinck Ventures)",
+      "website": "https://dvhventures.de/jobs/",
+      "mode": "page",
+      "scannable": true
     }
   ],
   "jobs": [
+    {
+      "id": "careerpage:9525f716bcfe",
+      "title": "Visiting Analyst - Science (f/m/d)",
+      "location": "Zurich/Berlin",
+      "url": "https://redalpine.docsend.com/view/428h65282jwg7g3t",
+      "department": "",
+      "vc": "Redalpine",
+      "vc_website": "https://www.redalpine.com/career",
+      "first_seen": "2026-09-18T23:17:19.268490+00:00"
+    },
+    {
+      "id": "personio:leapartners:2656046",
+      "title": "Associate (m/f/d)",
+      "location": "Karlsruhe",
+      "url": "https://leapartners.jobs.personio.de/job/2656046",
+      "department": "Investment Management",
+      "vc": "LEA Partners",
+      "vc_website": "https://leapartners.jobs.personio.com/",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
+    {
+      "id": "personio:leapartners:2053244",
+      "title": "Praktikant (m/w/d) Venture Capital",
+      "location": "Karlsruhe",
+      "url": "https://leapartners.jobs.personio.de/job/2053244",
+      "department": "Praktikanten",
+      "vc": "LEA Partners",
+      "vc_website": "https://leapartners.jobs.personio.com/",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
+    {
+      "id": "personio:leapartners:2623998",
+      "title": "Praktikum Private Equity (m/w/d) | B2B Software & AI",
+      "location": "Karlsruhe",
+      "url": "https://leapartners.jobs.personio.de/job/2623998",
+      "department": "Praktikanten",
+      "vc": "LEA Partners",
+      "vc_website": "https://leapartners.jobs.personio.com/",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
+    {
+      "id": "breezy:t-capital:17cc60ae8b68",
+      "title": "Tech Fund - Visiting Analyst (m/f/d)",
+      "location": "Frankfurt, DE",
+      "url": "https://t-capital.breezy.hr/p/17cc60ae8b68-tech-fund-visiting-analyst-m-f-d",
+      "department": "Tech Fund",
+      "vc": "T.Capital",
+      "vc_website": "https://t-capital.breezy.hr/",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
+    {
+      "id": "breezy:t-capital:af23845a76e1",
+      "title": "Venture Capital - Visiting Investment Analyst (m/f/d)",
+      "location": "Germany",
+      "url": "https://t-capital.breezy.hr/p/af23845a76e1-venture-capital-visiting-investment-analyst-m-f-d",
+      "department": "Ventures",
+      "vc": "T.Capital",
+      "vc_website": "https://t-capital.breezy.hr/",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
+    {
+      "id": "join:xdeck:16568603",
+      "title": "Visiting Analyst (F/M/D) - Summer 2027",
+      "location": "Köln, Deutschland",
+      "url": "https://join.com/companies/xdeck/16678681-visiting-analyst-f-m-d-summer-2027",
+      "department": "Finanzen",
+      "vc": "xdeck",
+      "vc_website": "https://join.com/companies/xdeck",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
+    {
+      "id": "careerpage:c32d833e1bec",
+      "title": "STEM Internship in Venture Capital (f/m/x)",
+      "location": "Köln",
+      "url": "https://dvhventures.de/jobs/visiting-analyst-in-venture-capital-f-m-x-2/",
+      "department": "",
+      "vc": "DvH Ventures (Dieter von Holtzbrinck Ventures)",
+      "vc_website": "https://dvhventures.de/jobs/",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
+    {
+      "id": "careerpage:993e5d495241",
+      "title": "Visiting Analyst in Venture Capital (f/m/x)",
+      "location": "Köln",
+      "url": "https://dvhventures.de/jobs/visiting-analyst-in-venture-capital-f-m-x/",
+      "department": "",
+      "vc": "DvH Ventures (Dieter von Holtzbrinck Ventures)",
+      "vc_website": "https://dvhventures.de/jobs/",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
     {
       "id": "careerpage:9f437a2c747f",
       "title": "Visiting Analyst (m/w/d)",

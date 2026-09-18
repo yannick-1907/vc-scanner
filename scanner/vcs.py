@@ -821,12 +821,6 @@ VCS: list[dict] = [
         "slug": "redstone-digital-gmbh",
     },
     {
-        "name": "Revent",
-        "website": "https://careers.revent.vc/jobs",
-        "ats": "careerpage",
-        "slug": "https://careers.revent.vc/jobs|Deutschland",
-    },
-    {
         "name": "Richmond View Ventures",
         "website": "https://rvv.tv/jobs",
         "ats": "join",
@@ -993,5 +987,29 @@ VCS: list[dict] = [
         "website": "https://yzr-capital.com/careers",
         "ats": "join",
         "slug": "yzr",
+    },
+    {
+        "name": "LEA Partners",
+        "website": "https://leapartners.jobs.personio.com/",
+        "ats": "personio",
+        "slug": "leapartners",
+    },
+    {
+        "name": "T.Capital",
+        "website": "https://t-capital.breezy.hr/",
+        "ats": "breezy",
+        "slug": "t-capital",
+    },
+    {
+        "name": "xdeck",
+        "website": "https://join.com/companies/xdeck",
+        "ats": "join",
+        "slug": "xdeck",
+    },
+    {
+        "name": "DvH Ventures (Dieter von Holtzbrinck Ventures)",
+        "website": "https://dvhventures.de/jobs/",
+        "ats": "careerpage",
+        "slug": "https://dvhventures.de/jobs/|Deutschland",
     },
 ]
