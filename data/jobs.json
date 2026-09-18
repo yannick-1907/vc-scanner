@@ -1,7 +1,17 @@
 {
-  "updated_at": "2026-09-18T20:48:23.574902+00:00",
-  "count": 3,
+  "updated_at": "2026-09-18T20:59:28.887410+00:00",
+  "count": 4,
   "jobs": [
+    {
+      "id": "recruitee:pointnine:2619634",
+      "title": "Platform Associate",
+      "location": "Berlin, Berlin, Germany",
+      "url": "https://pointnine.recruitee.com/o/platform-associate",
+      "department": null,
+      "vc": "Point Nine",
+      "vc_website": "https://www.pointnine.com/",
+      "first_seen": "2026-09-18T20:59:28.887410+00:00"
+    },
     {
       "id": "personio:earlybirdvc-gmbh:2715164",
       "title": "Investment Intern (m/f/d)",
