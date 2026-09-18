@@ -373,6 +373,29 @@ def trakstar(slug: str) -> list[dict]:
     return jobs
 
 
+# --------------------------------------------------------------------------- #
+# Breezy HR -> https://{slug}.breezy.hr/json
+# --------------------------------------------------------------------------- #
+def breezy(slug: str) -> list[dict]:
+    try:
+        data = _get(f"https://{slug}.breezy.hr/json").json()
+    except (requests.RequestException, ValueError):
+        return []
+    jobs = []
+    for j in data if isinstance(data, list) else []:
+        loc = j.get("location") or {}
+        jobs.append(
+            {
+                "id": f"breezy:{slug}:{j.get('id')}",
+                "title": (j.get("name") or "").strip(),
+                "location": loc.get("name", "") if isinstance(loc, dict) else str(loc),
+                "url": j.get("url", ""),
+                "department": j.get("department", "") if isinstance(j.get("department"), str) else "",
+            }
+        )
+    return jobs
+
+
 # Registry: ATS-Name -> Adapter-Funktion
 ADAPTERS: dict[str, Callable[[str], list[dict]]] = {
     "personio": personio,
@@ -385,6 +408,7 @@ ADAPTERS: dict[str, Callable[[str], list[dict]]] = {
     "getro": getro,
     "smartrecruiters": smartrecruiters,
     "trakstar": trakstar,
+    "breezy": breezy,
 }
 
 

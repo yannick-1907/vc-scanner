@@ -51,6 +51,18 @@ def save_state(state: dict) -> None:
     )
 
 
+def vc_overview() -> list[dict]:
+    """Alle VCs (einmal pro Name); scannable = mindestens ein auslesbarer Feed."""
+    seen: dict[str, dict] = {}
+    for vc in VCS:
+        entry = seen.setdefault(
+            vc["name"], {"name": vc["name"], "website": vc.get("website", ""), "scannable": False}
+        )
+        if vc.get("ats"):
+            entry["scannable"] = True
+    return list(seen.values())
+
+
 def scan() -> None:
     state = load_state()
     known = {j["id"]: j for j in state.get("jobs", [])}
@@ -62,6 +74,8 @@ def scan() -> None:
 
     for vc in VCS:
         name = vc["name"]
+        if not vc.get("ats"):
+            continue  # VC ohne auslesbaren Feed: nur im Dropdown, nicht gescannt
         try:
             raw_jobs = ats.fetch_jobs(vc["ats"], vc["slug"])
         except Exception as e:  # defensiv: ein VC darf den Lauf nicht killen
@@ -100,7 +114,7 @@ def scan() -> None:
         "updated_at": now,
         "count": len(merged),
         # Alle gescannten VCs, damit die Webseite auch VCs ohne offene Stelle anzeigen kann.
-        "vcs": [{"name": vc["name"], "website": vc.get("website", "")} for vc in VCS],
+        "vcs": vc_overview(),
         "jobs": merged,
         "errors": errors,
     }

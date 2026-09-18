@@ -117,6 +117,7 @@
   }
   .ms-opt .count.has { color: var(--new); background: var(--new-soft); font-weight: 600; }
   .ms-opt.none .name { color: var(--muted); }
+  .ms-opt .count.na { background: transparent; border: 1px dashed var(--border); font-size: 0.7rem; }
 
   .notice {
     background: var(--surface-2); border: 1px solid var(--border);
@@ -195,12 +196,13 @@ async function load() {
     // nur die VCs, die aktuell Stellen haben.
     const known = new Map((data.vcs || []).map(v => [v.name, v]));
     for (const j of state.jobs) {
-      if (!known.has(j.vc)) known.set(j.vc, { name: j.vc, website: j.vc_website || "" });
+      if (!known.has(j.vc)) known.set(j.vc, { name: j.vc, website: j.vc_website || "", scannable: true });
     }
     state.vcs = [...known.values()].sort((a, b) => a.name.localeCompare(b.name, "de"));
     document.getElementById("updated").textContent =
       "Zuletzt aktualisiert: " + (data.updated_at ? fmtDate(data.updated_at) : "—") +
-      " · " + (data.count ?? state.jobs.length) + " offene Stellen bei " + state.vcs.length + " VCs";
+      " · " + (data.count ?? state.jobs.length) + " offene Stellen · " +
+      state.vcs.filter(v => v.scannable !== false).length + " von " + state.vcs.length + " VCs automatisch überwacht";
     buildVcOptions();
     render();
   } catch (e) {
@@ -225,10 +227,13 @@ function buildVcOptions() {
     '</div>' +
     state.vcs.map((v, i) => {
       const n = counts[v.name] || 0;
+      const na = v.scannable === false;
       return `<label class="ms-opt ${n ? "" : "none"}">
         <input type="checkbox" value="${escapeHtml(v.name)}" ${state.selected.has(v.name) ? "checked" : ""} />
         <span class="name">${escapeHtml(v.name)}</span>
-        <span class="count ${n ? "has" : ""}" title="${n} offene Stelle(n)">${n}</span>
+        ${na
+          ? '<span class="count na" title="Nicht automatisch scanbar – Karriereseite manuell prüfen">–</span>'
+          : `<span class="count ${n ? "has" : ""}" title="${n} offene Stelle(n)">${n}</span>`}
       </label>`;
     }).join("");
   updateVcLabel();
@@ -246,13 +251,19 @@ function setPanel(open) {
 }
 
 function emptyMessage(names) {
-  const site = Object.fromEntries(state.vcs.map(v => [v.name, v.website]));
-  return names.map(n => `
+  const by = Object.fromEntries(state.vcs.map(v => [v.name, v]));
+  return names.map(n => {
+    const v = by[n] || {};
+    const msg = v.scannable === false
+      ? "Nicht automatisch scanbar – Karriereseite manuell prüfen."
+      : "Aktuell keine Stelle ausgeschrieben.";
+    return `
     <div class="vc-empty">
       <div class="name">${escapeHtml(n)}</div>
-      <div class="msg">Aktuell keine Stelle ausgeschrieben.</div>
-      ${site[n] ? `<a class="link" href="${escapeHtml(site[n])}" target="_blank" rel="noopener">Zur Karriereseite ↗</a>` : ""}
-    </div>`).join("");
+      <div class="msg">${msg}</div>
+      ${v.website ? `<a class="link" href="${escapeHtml(v.website)}" target="_blank" rel="noopener">Zur Karriereseite ↗</a>` : ""}
+    </div>`;
+  }).join("");
 }
 
 function render() {
@@ -275,6 +286,9 @@ function render() {
   // Ausgewählte VCs, die überhaupt keine offene Stelle haben (unabhängig von Suche/Typ).
   const counts = jobCounts();
   const emptyVcs = [...sel].filter(n => !counts[n]).sort((a, b) => a.localeCompare(b, "de"));
+  const scannable = Object.fromEntries(state.vcs.map(v => [v.name, v.scannable !== false]));
+  const noneOpen = emptyVcs.filter(n => scannable[n]);       // Feed vorhanden, aber keine Stelle
+  const notScanned = emptyVcs.filter(n => !scannable[n]);    // kein auslesbarer Feed
 
   if (!jobs.length) {
     if (emptyVcs.length && emptyVcs.length === sel.size) {
@@ -288,9 +302,13 @@ function render() {
     return;
   }
 
-  const notice = emptyVcs.length
-    ? `<div class="notice">Aktuell keine Stelle ausgeschrieben bei: <strong>${emptyVcs.map(escapeHtml).join(", ")}</strong></div>`
-    : "";
+  const notice =
+    (noneOpen.length
+      ? `<div class="notice">Aktuell keine Stelle ausgeschrieben bei: <strong>${noneOpen.map(escapeHtml).join(", ")}</strong></div>`
+      : "") +
+    (notScanned.length
+      ? `<div class="notice">Nicht automatisch scanbar (Karriereseite manuell prüfen): <strong>${notScanned.map(escapeHtml).join(", ")}</strong></div>`
+      : "");
 
   list.innerHTML = notice + jobs.map(j => `
     <a class="job" href="${j.url}" target="_blank" rel="noopener">
