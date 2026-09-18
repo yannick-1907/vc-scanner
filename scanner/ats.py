@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import json
 import re
+from html import unescape as html_unescape
 import xml.etree.ElementTree as ET
 from typing import Callable
 
@@ -298,6 +299,80 @@ def getro(slug: str) -> list[dict]:
     return jobs
 
 
+# --------------------------------------------------------------------------- #
+# SmartRecruiters -> https://api.smartrecruiters.com/v1/companies/{company}/postings
+#   slug = "<company>" oder "<company>|<Stichwort>". Mit Stichwort werden nur Stellen
+#   behalten, deren Titel das Stichwort enthaelt (z.B. "RocketInternet|Global Founders Capital",
+#   weil GFC seine Stellen ueber das Rocket-Internet-Konto ausschreibt).
+# --------------------------------------------------------------------------- #
+def smartrecruiters(slug: str) -> list[dict]:
+    company, _, keyword = slug.partition("|")
+    jobs: list[dict] = []
+    offset = 0
+    while offset < 500:  # Sicherheitslimit
+        params = {"limit": 100, "offset": offset}
+        if keyword:
+            params["q"] = keyword
+        try:
+            data = requests.get(
+                f"https://api.smartrecruiters.com/v1/companies/{company}/postings",
+                params=params,
+                headers=HEADERS,
+                timeout=TIMEOUT,
+            ).json()
+        except (requests.RequestException, ValueError):
+            break
+        items = data.get("content", [])
+        for j in items:
+            title = (j.get("name") or "").strip()
+            if keyword and keyword.lower() not in title.lower():
+                continue
+            loc = j.get("location") or {}
+            jobs.append(
+                {
+                    "id": f"smartrecruiters:{company}:{j.get('id')}",
+                    "title": title,
+                    "location": ", ".join(
+                        filter(None, [loc.get("city", ""), (loc.get("country") or "").upper()])
+                    ),
+                    "url": f"https://jobs.smartrecruiters.com/{company}/{j.get('id')}",
+                    "department": "",
+                }
+            )
+        offset += 100
+        if len(items) < 100:
+            break
+    return jobs
+
+
+# --------------------------------------------------------------------------- #
+# Trakstar Hire -> https://{slug}.hire.trakstar.com/  (HTML-Liste)
+# --------------------------------------------------------------------------- #
+def trakstar(slug: str) -> list[dict]:
+    base = f"https://{slug}.hire.trakstar.com"
+    try:
+        html = _get(base + "/").text
+    except requests.RequestException:
+        return []
+    jobs: list[dict] = []
+    for card in html.split('data-href="')[1:]:
+        path = card.split('"', 1)[0]
+        title = re.search(r'js-job-list-opening-name[^>]*title="([^"]*)"', card)
+        loc = re.search(r'js-job-list-opening-loc[^>]*title="([^"]*)"', card)
+        if not title or not path.startswith("/jobs/"):
+            continue
+        jobs.append(
+            {
+                "id": f"trakstar:{slug}:{path.strip('/').split('/')[-1]}",
+                "title": html_unescape(title.group(1)).strip(),
+                "location": html_unescape(loc.group(1)).strip() if loc else "",
+                "url": base + path,
+                "department": "",
+            }
+        )
+    return jobs
+
+
 # Registry: ATS-Name -> Adapter-Funktion
 ADAPTERS: dict[str, Callable[[str], list[dict]]] = {
     "personio": personio,
@@ -308,6 +383,8 @@ ADAPTERS: dict[str, Callable[[str], list[dict]]] = {
     "workable": workable,
     "join": join,
     "getro": getro,
+    "smartrecruiters": smartrecruiters,
+    "trakstar": trakstar,
 }
 
 

@@ -99,6 +99,8 @@ def scan() -> None:
     state = {
         "updated_at": now,
         "count": len(merged),
+        # Alle gescannten VCs, damit die Webseite auch VCs ohne offene Stelle anzeigen kann.
+        "vcs": [{"name": vc["name"], "website": vc.get("website", "")} for vc in VCS],
         "jobs": merged,
         "errors": errors,
     }

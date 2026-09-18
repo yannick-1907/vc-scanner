@@ -1,7 +1,187 @@
 {
-  "updated_at": "2026-09-18T21:09:12.666189+00:00",
-  "count": 4,
+  "updated_at": "2026-09-18T21:20:35.694994+00:00",
+  "count": 11,
+  "vcs": [
+    {
+      "name": "Earlybird",
+      "website": "https://earlybird.com/"
+    },
+    {
+      "name": "HV Capital",
+      "website": "https://hvcapital.com/"
+    },
+    {
+      "name": "Lakestar",
+      "website": "https://lakestar.com/"
+    },
+    {
+      "name": "Point Nine",
+      "website": "https://www.pointnine.com/"
+    },
+    {
+      "name": "Speedinvest",
+      "website": "https://careers.speedinvest.com/companies/speedinvest"
+    },
+    {
+      "name": "Cherry Ventures",
+      "website": "https://talent.cherry.vc/companies/cherry-ventures"
+    },
+    {
+      "name": "Project A Ventures",
+      "website": "https://join.com/companies/project-a"
+    },
+    {
+      "name": "Picus Capital",
+      "website": "https://join.com/companies/picuscap"
+    },
+    {
+      "name": "High-Tech Gründerfonds (HTGF)",
+      "website": "https://www.htgf.de/de/karriere/"
+    },
+    {
+      "name": "Creandum",
+      "website": "https://creandum.com/"
+    },
+    {
+      "name": "DN Capital",
+      "website": "https://dncapital.hire.trakstar.com/"
+    },
+    {
+      "name": "Global Founders Capital",
+      "website": "https://jobs.smartrecruiters.com/RocketInternet"
+    },
+    {
+      "name": "UVC Partners",
+      "website": "https://talent.uvcpartners.com/companies/uvc-partners-2"
+    },
+    {
+      "name": "Headline",
+      "website": "https://join.com/companies/headline"
+    },
+    {
+      "name": "Atlantic Labs",
+      "website": "https://join.com/companies/atlanticlabs"
+    },
+    {
+      "name": "Antler",
+      "website": "https://join.com/companies/antler"
+    },
+    {
+      "name": "btov / b2venture",
+      "website": "https://join.com/companies/b2venture"
+    },
+    {
+      "name": "Visionaries Club",
+      "website": "https://join.com/companies/visionariesclub"
+    },
+    {
+      "name": "Wellington Partners",
+      "website": "https://join.com/companies/wellington-partners"
+    },
+    {
+      "name": "Vorwerk Ventures",
+      "website": "https://join.com/companies/vorwerkventures"
+    },
+    {
+      "name": "Senovo",
+      "website": "https://join.com/companies/senovo"
+    },
+    {
+      "name": "coparion",
+      "website": "https://join.com/companies/coparion"
+    },
+    {
+      "name": "Cusp Capital",
+      "website": "https://join.com/companies/cuspcapital"
+    },
+    {
+      "name": "Extantia Capital",
+      "website": "https://join.com/companies/extantia"
+    },
+    {
+      "name": "JOIN Capital",
+      "website": "https://join-capital.com/"
+    },
+    {
+      "name": "General Catalyst",
+      "website": "https://job-boards.greenhouse.io/generalcatalyst"
+    },
+    {
+      "name": "BITKRAFT Ventures",
+      "website": "https://boards.greenhouse.io/bitkraft"
+    }
+  ],
   "jobs": [
+    {
+      "id": "trakstar:dncapital:fk0u5xf",
+      "title": "Associate - Berlin",
+      "location": "Berlin, Germany",
+      "url": "https://dncapital.hire.trakstar.com/jobs/fk0u5xf/",
+      "department": "",
+      "vc": "DN Capital",
+      "vc_website": "https://dncapital.hire.trakstar.com/",
+      "first_seen": "2026-09-18T21:16:43.315271+00:00"
+    },
+    {
+      "id": "trakstar:dncapital:fk0hecj",
+      "title": "Visiting Analyst (Investment Team Intern)",
+      "location": "London (UK) or Berlin (DE)",
+      "url": "https://dncapital.hire.trakstar.com/jobs/fk0hecj/",
+      "department": "",
+      "vc": "DN Capital",
+      "vc_website": "https://dncapital.hire.trakstar.com/",
+      "first_seen": "2026-09-18T21:16:43.315271+00:00"
+    },
+    {
+      "id": "smartrecruiters:RocketInternet:743999828078857",
+      "title": "Venture Capital Intern @ Global Founders Capital",
+      "location": "Berlin, DE",
+      "url": "https://jobs.smartrecruiters.com/RocketInternet/743999828078857",
+      "department": "",
+      "vc": "Global Founders Capital",
+      "vc_website": "https://jobs.smartrecruiters.com/RocketInternet",
+      "first_seen": "2026-09-18T21:16:43.315271+00:00"
+    },
+    {
+      "id": "smartrecruiters:RocketInternet:743999752663004",
+      "title": "Growth & Private Equity Working Student (m/f/d) @ Global Founders Capital",
+      "location": "Munich, DE",
+      "url": "https://jobs.smartrecruiters.com/RocketInternet/743999752663004",
+      "department": "",
+      "vc": "Global Founders Capital",
+      "vc_website": "https://jobs.smartrecruiters.com/RocketInternet",
+      "first_seen": "2026-09-18T21:16:43.315271+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:91246988",
+      "title": "Data & AI - Master Thesis / Internship (f/m/x)",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/91246988-data-ai-master-thesis-internship-f-m-x",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://talent.uvcpartners.com/companies/uvc-partners-2",
+      "first_seen": "2026-09-18T21:16:43.315271+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:86907913",
+      "title": "Unsolicited Application: Intern or Working Student for our Investment Team at UVC",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/86907913-unsolicited-application-intern-or-working-student-for-our-investment-team-at-uvc",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://talent.uvcpartners.com/companies/uvc-partners-2",
+      "first_seen": "2026-09-18T21:16:43.315271+00:00"
+    },
+    {
+      "id": "join:b2venture:16441310",
+      "title": "Product Associate, Fund Finance @ b2venture (m/f/d)",
+      "location": "Berlin, Deutschland",
+      "url": "https://join.com/companies/b2venture/16688751-product-associate-fund-finance-b2venture-m-f-d",
+      "department": "Finanzen",
+      "vc": "btov / b2venture",
+      "vc_website": "https://join.com/companies/b2venture",
+      "first_seen": "2026-09-18T21:16:43.315271+00:00"
+    },
     {
       "id": "recruitee:pointnine:2619634",
       "title": "Platform Associate",

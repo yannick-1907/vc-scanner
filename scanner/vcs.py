@@ -5,7 +5,7 @@ Jeder Eintrag:
     name    -> Anzeigename
     website -> Karriere-/Website-Link (für die UI)
     ats     -> eines von: personio | greenhouse | lever | ashby | recruitee | workable
-                          | join | getro
+                          | join | getro | smartrecruiters | trakstar
     slug    -> die firmenspezifische Kennung im jeweiligen ATS
 
 So findest du den slug:
@@ -20,6 +20,10 @@ So findest du den slug:
                   Das Board listet auch Portfolio-Stellen; der Adapter filtert auf die
                   Stellen des VCs selbst. Den company-slug findest du in der URL
                   <board-host>/companies/<company-slug>.
+
+    - SmartRecruiters: "<company>" oder "<company>|<Stichwort>". Mit Stichwort werden nur Stellen
+                  behalten, deren Titel es enthaelt (GFC: "RocketInternet|Global Founders Capital").
+    - Trakstar:   {slug}.hire.trakstar.com
 
 Bevorzugt den direkten ATS des VCs (Personio, Ashby ...) gegenüber Getro, wenn bekannt.
 
@@ -87,5 +91,113 @@ VCS: list[dict] = [
         "website": "https://www.htgf.de/de/karriere/",
         "ats": "personio",
         "slug": "htgf",
+    },
+    {
+        "name": "Creandum",
+        "website": "https://creandum.com/",
+        "ats": "recruitee",
+        "slug": "creandum",
+    },
+    {
+        "name": "DN Capital",
+        "website": "https://dncapital.hire.trakstar.com/",
+        "ats": "trakstar",
+        "slug": "dncapital",
+    },
+    {
+        "name": "Global Founders Capital",
+        "website": "https://jobs.smartrecruiters.com/RocketInternet",
+        "ats": "smartrecruiters",
+        "slug": "RocketInternet|Global Founders Capital",
+    },
+    {
+        "name": "UVC Partners",
+        "website": "https://talent.uvcpartners.com/companies/uvc-partners-2",
+        "ats": "getro",
+        "slug": "talent.uvcpartners.com/uvc-partners-2",
+    },
+    {
+        "name": "Headline",
+        "website": "https://join.com/companies/headline",
+        "ats": "join",
+        "slug": "headline",
+    },
+    {
+        "name": "Atlantic Labs",
+        "website": "https://join.com/companies/atlanticlabs",
+        "ats": "join",
+        "slug": "atlanticlabs",
+    },
+    {
+        "name": "Antler",
+        "website": "https://join.com/companies/antler",
+        "ats": "join",
+        "slug": "antler",
+    },
+    {
+        "name": "btov / b2venture",
+        "website": "https://join.com/companies/b2venture",
+        "ats": "join",
+        "slug": "b2venture",
+    },
+    {
+        "name": "Visionaries Club",
+        "website": "https://join.com/companies/visionariesclub",
+        "ats": "join",
+        "slug": "visionariesclub",
+    },
+    {
+        "name": "Wellington Partners",
+        "website": "https://join.com/companies/wellington-partners",
+        "ats": "join",
+        "slug": "wellington-partners",
+    },
+    {
+        "name": "Vorwerk Ventures",
+        "website": "https://join.com/companies/vorwerkventures",
+        "ats": "join",
+        "slug": "vorwerkventures",
+    },
+    {
+        "name": "Senovo",
+        "website": "https://join.com/companies/senovo",
+        "ats": "join",
+        "slug": "senovo",
+    },
+    {
+        "name": "coparion",
+        "website": "https://join.com/companies/coparion",
+        "ats": "join",
+        "slug": "coparion",
+    },
+    {
+        "name": "Cusp Capital",
+        "website": "https://join.com/companies/cuspcapital",
+        "ats": "join",
+        "slug": "cuspcapital",
+    },
+    {
+        "name": "Extantia Capital",
+        "website": "https://join.com/companies/extantia",
+        "ats": "join",
+        "slug": "extantia",
+    },
+    {
+        "name": "JOIN Capital",
+        "website": "https://join-capital.com/",
+        "ats": "personio",
+        "slug": "join-capital",
+    },
+    {
+        "name": "General Catalyst",
+        "website": "https://job-boards.greenhouse.io/generalcatalyst",
+        "ats": "greenhouse",
+        "slug": "generalcatalyst",
+    },
+    {
+        "name": "BITKRAFT Ventures",
+        "website": "https://boards.greenhouse.io/bitkraft",
+        "ats": "greenhouse",
+        "slug": "bitkraft",
     },
 ]

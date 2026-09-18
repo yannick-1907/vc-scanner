@@ -80,6 +80,59 @@
   .job-sub .vc { color: var(--text); font-weight: 600; }
   .job-sub .dot::before { content: "•"; margin-right: 6px; color: var(--border); }
 
+  /* Mehrfachauswahl-Dropdown für VCs */
+  .ms { position: relative; }
+  .ms-btn {
+    display: flex; align-items: center; gap: 8px; cursor: pointer;
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 12px; font-size: 0.92rem; font-family: inherit;
+    min-width: 190px; justify-content: space-between;
+  }
+  .ms-btn:hover, .ms-btn[aria-expanded="true"] { border-color: var(--accent); }
+  .ms-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ms-btn .chev { color: var(--muted); font-size: 0.7rem; }
+  .ms-panel {
+    position: absolute; top: calc(100% + 6px); left: 0; z-index: 10;
+    width: max(100%, 280px); max-height: 380px; overflow: auto;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 6px; box-shadow: 0 12px 32px rgba(0,0,0,.28);
+  }
+  .ms-panel[hidden] { display: none; }
+  .ms-actions { display: flex; gap: 8px; padding: 4px 6px 8px; border-bottom: 1px solid var(--border); margin-bottom: 4px; }
+  .ms-actions button {
+    background: none; border: none; color: var(--accent); cursor: pointer;
+    font: inherit; font-size: 0.82rem; padding: 2px 4px;
+  }
+  .ms-opt {
+    display: flex; align-items: center; gap: 10px; padding: 7px 8px;
+    border-radius: 8px; cursor: pointer; font-size: 0.9rem;
+  }
+  .ms-opt:hover { background: var(--surface-2); }
+  .ms-opt input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
+  .ms-opt .name { flex: 1; }
+  .ms-opt .count {
+    font-size: 0.75rem; color: var(--muted); background: var(--surface-2);
+    border-radius: 999px; padding: 1px 8px; min-width: 24px; text-align: center;
+  }
+  .ms-opt .count.has { color: var(--new); background: var(--new-soft); font-weight: 600; }
+  .ms-opt.none .name { color: var(--muted); }
+
+  .notice {
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 14px;
+    color: var(--muted); font-size: 0.88rem;
+  }
+  .notice strong { color: var(--text); }
+  .vc-empty {
+    background: var(--surface); border: 1px dashed var(--border);
+    border-radius: var(--radius); padding: 28px 18px; margin-bottom: 12px;
+    text-align: center;
+  }
+  .vc-empty .name { font-weight: 600; font-size: 1.05rem; }
+  .vc-empty .msg { color: var(--muted); margin-top: 4px; }
+  .vc-empty a { display: inline-block; margin-top: 10px; font-size: 0.88rem; }
+
   .empty { text-align: center; color: var(--muted); padding: 60px 0; }
   footer { margin-top: 40px; color: var(--muted); font-size: 0.8rem; text-align: center; }
   a.link { color: var(--accent); }
@@ -95,13 +148,19 @@
 
     <div class="controls">
       <input type="search" id="search" placeholder="Suche nach Titel, VC, Ort…" />
-      <select id="vcFilter"><option value="">Alle VCs</option></select>
+      <div class="ms" id="vcMs">
+        <button type="button" class="ms-btn" id="vcBtn" aria-haspopup="true" aria-expanded="false" aria-controls="vcPanel">
+          <span id="vcLabel">Alle VCs</span><span class="chev" aria-hidden="true">▼</span>
+        </button>
+        <div class="ms-panel" id="vcPanel" role="group" aria-label="VCs auswählen" hidden></div>
+      </div>
       <select id="typeFilter">
         <option value="">Alle Typen</option>
         <option value="praktik">Praktikum</option>
         <option value="werkstudent">Werkstudent</option>
         <option value="intern">Internship</option>
         <option value="analyst">Analyst</option>
+        <option value="associate">Associate</option>
         <option value="graduate">Graduate/Junior</option>
       </select>
     </div>
@@ -115,7 +174,7 @@
   </div>
 
 <script>
-const state = { jobs: [] };
+const state = { jobs: [], vcs: [], selected: new Set() };
 
 function fmtDate(iso) {
   if (!iso) return "";
@@ -132,9 +191,16 @@ async function load() {
     const res = await fetch("./data/jobs.json?_=" + Date.now());
     const data = await res.json();
     state.jobs = data.jobs || [];
+    // Alle gescannten VCs (auch ohne Stelle). Fallback für ältere Daten ohne "vcs":
+    // nur die VCs, die aktuell Stellen haben.
+    const known = new Map((data.vcs || []).map(v => [v.name, v]));
+    for (const j of state.jobs) {
+      if (!known.has(j.vc)) known.set(j.vc, { name: j.vc, website: j.vc_website || "" });
+    }
+    state.vcs = [...known.values()].sort((a, b) => a.name.localeCompare(b.name, "de"));
     document.getElementById("updated").textContent =
       "Zuletzt aktualisiert: " + (data.updated_at ? fmtDate(data.updated_at) : "—") +
-      " · " + (data.count ?? state.jobs.length) + " offene Stellen";
+      " · " + (data.count ?? state.jobs.length) + " offene Stellen bei " + state.vcs.length + " VCs";
     buildVcOptions();
     render();
   } catch (e) {
@@ -143,24 +209,61 @@ async function load() {
   }
 }
 
+function jobCounts() {
+  const counts = {};
+  for (const j of state.jobs) counts[j.vc] = (counts[j.vc] || 0) + 1;
+  return counts;
+}
+
 function buildVcOptions() {
-  const sel = document.getElementById("vcFilter");
-  const vcs = [...new Set(state.jobs.map(j => j.vc))].sort();
-  for (const vc of vcs) {
-    const o = document.createElement("option");
-    o.value = vc; o.textContent = vc; sel.appendChild(o);
-  }
+  const panel = document.getElementById("vcPanel");
+  const counts = jobCounts();
+  panel.innerHTML =
+    '<div class="ms-actions">' +
+      '<button type="button" data-act="all">Alle auswählen</button>' +
+      '<button type="button" data-act="none">Zurücksetzen</button>' +
+    '</div>' +
+    state.vcs.map((v, i) => {
+      const n = counts[v.name] || 0;
+      return `<label class="ms-opt ${n ? "" : "none"}">
+        <input type="checkbox" value="${escapeHtml(v.name)}" ${state.selected.has(v.name) ? "checked" : ""} />
+        <span class="name">${escapeHtml(v.name)}</span>
+        <span class="count ${n ? "has" : ""}" title="${n} offene Stelle(n)">${n}</span>
+      </label>`;
+    }).join("");
+  updateVcLabel();
+}
+
+function updateVcLabel() {
+  const n = state.selected.size;
+  document.getElementById("vcLabel").textContent =
+    n === 0 ? "Alle VCs" : n === 1 ? [...state.selected][0] : n + " VCs ausgewählt";
+}
+
+function setPanel(open) {
+  document.getElementById("vcPanel").hidden = !open;
+  document.getElementById("vcBtn").setAttribute("aria-expanded", String(open));
+}
+
+function emptyMessage(names) {
+  const site = Object.fromEntries(state.vcs.map(v => [v.name, v.website]));
+  return names.map(n => `
+    <div class="vc-empty">
+      <div class="name">${escapeHtml(n)}</div>
+      <div class="msg">Aktuell keine Stelle ausgeschrieben.</div>
+      ${site[n] ? `<a class="link" href="${escapeHtml(site[n])}" target="_blank" rel="noopener">Zur Karriereseite ↗</a>` : ""}
+    </div>`).join("");
 }
 
 function render() {
   const q = document.getElementById("search").value.toLowerCase();
-  const vc = document.getElementById("vcFilter").value;
   const type = document.getElementById("typeFilter").value.toLowerCase();
+  const sel = state.selected;
 
   let jobs = state.jobs.filter(j => {
     const hay = (j.title + " " + j.vc + " " + (j.location||"") + " " + (j.department||"")).toLowerCase();
     if (q && !hay.includes(q)) return false;
-    if (vc && j.vc !== vc) return false;
+    if (sel.size && !sel.has(j.vc)) return false;
     if (type && !j.title.toLowerCase().includes(type)) return false;
     return true;
   });
@@ -169,12 +272,27 @@ function render() {
   document.getElementById("stats").textContent =
     jobs.length + " Stelle" + (jobs.length === 1 ? "" : "n") + " angezeigt";
 
+  // Ausgewählte VCs, die überhaupt keine offene Stelle haben (unabhängig von Suche/Typ).
+  const counts = jobCounts();
+  const emptyVcs = [...sel].filter(n => !counts[n]).sort((a, b) => a.localeCompare(b, "de"));
+
   if (!jobs.length) {
-    list.innerHTML = '<div class="empty">Keine passenden Stellen. 🔍</div>';
+    if (emptyVcs.length && emptyVcs.length === sel.size) {
+      list.innerHTML = emptyMessage(emptyVcs);            // nur VCs ohne Stelle gewählt
+    } else if (emptyVcs.length) {
+      list.innerHTML = emptyMessage(emptyVcs) +
+        '<div class="empty">Keine passenden Stellen für die übrigen Filter. 🔍</div>';
+    } else {
+      list.innerHTML = '<div class="empty">Keine passenden Stellen. 🔍</div>';
+    }
     return;
   }
 
-  list.innerHTML = jobs.map(j => `
+  const notice = emptyVcs.length
+    ? `<div class="notice">Aktuell keine Stelle ausgeschrieben bei: <strong>${emptyVcs.map(escapeHtml).join(", ")}</strong></div>`
+    : "";
+
+  list.innerHTML = notice + jobs.map(j => `
     <a class="job" href="${j.url}" target="_blank" rel="noopener">
       <div class="job-top">
         <p class="job-title">${escapeHtml(j.title)}</p>
@@ -195,8 +313,31 @@ function escapeHtml(s) {
   }[c]));
 }
 
-["search","vcFilter","typeFilter"].forEach(id =>
+["search","typeFilter"].forEach(id =>
   document.getElementById(id).addEventListener("input", render));
+
+// Mehrfachauswahl-Dropdown
+document.getElementById("vcBtn").addEventListener("click", () =>
+  setPanel(document.getElementById("vcPanel").hidden));
+document.getElementById("vcPanel").addEventListener("change", e => {
+  if (e.target.type !== "checkbox") return;
+  e.target.checked ? state.selected.add(e.target.value) : state.selected.delete(e.target.value);
+  updateVcLabel();
+  render();
+});
+document.getElementById("vcPanel").addEventListener("click", e => {
+  const act = e.target.dataset && e.target.dataset.act;
+  if (!act) return;
+  state.selected = act === "all" ? new Set(state.vcs.map(v => v.name)) : new Set();
+  buildVcOptions();
+  render();
+});
+document.addEventListener("click", e => {
+  if (!document.getElementById("vcMs").contains(e.target)) setPanel(false);
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") { setPanel(false); document.getElementById("vcBtn").focus(); }
+});
 
 load();
 </script>
