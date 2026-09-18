@@ -1,0 +1,48 @@
+name: VC Scan
+
+on:
+  schedule:
+    # Alle 3 Stunden (UTC). Cron-Zeiten sind immer UTC.
+    - cron: "0 */3 * * *"
+  workflow_dispatch: {}   # manuelles Auslösen über den Actions-Tab
+
+permissions:
+  contents: write   # nötig, damit die Action data/jobs.json committen darf
+
+concurrency:
+  group: vc-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scanner
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scanner/scan.py
+
+      - name: Commit updated jobs
+        run: |
+          git config user.name  "vc-scanner-bot"
+          git config user.email "actions@github.com"
+          git add data/jobs.json
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen."
+          else
+            git commit -m "chore: update jobs [skip ci]"
+            git push
+          fi

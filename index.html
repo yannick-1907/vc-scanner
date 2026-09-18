@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VC Scanner – Praktika & Einstieg bei VCs in Deutschland</title>
+<style>
+  :root {
+    --bg: #0b0c10;
+    --surface: #14161d;
+    --surface-2: #1b1e27;
+    --border: #262a36;
+    --text: #e8eaf0;
+    --muted: #9aa2b1;
+    --accent: #6c8cff;
+    --accent-soft: rgba(108, 140, 255, 0.14);
+    --new: #35d07f;
+    --new-soft: rgba(53, 208, 127, 0.15);
+    --radius: 14px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --surface-2: #f0f2f8;
+      --border: #e2e5ee;
+      --text: #16181f;
+      --muted: #667085;
+      --accent: #3a5bff;
+      --accent-soft: rgba(58, 91, 255, 0.1);
+      --new: #12a05c;
+      --new-soft: rgba(18, 160, 92, 0.12);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 32px 20px 80px; }
+  header h1 { font-size: 1.6rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  header p { color: var(--muted); margin: 0 0 4px; font-size: 0.95rem; }
+  .meta { color: var(--muted); font-size: 0.8rem; margin-top: 6px; }
+
+  .controls {
+    display: flex; gap: 10px; flex-wrap: wrap;
+    margin: 24px 0 18px; position: sticky; top: 0;
+    background: var(--bg); padding: 12px 0; z-index: 5;
+  }
+  input[type="search"], select {
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 12px; font-size: 0.92rem; outline: none;
+  }
+  input[type="search"] { flex: 1 1 240px; }
+  input[type="search"]:focus, select:focus { border-color: var(--accent); }
+
+  .stats { color: var(--muted); font-size: 0.85rem; margin-bottom: 14px; }
+
+  .job {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 16px 18px; margin-bottom: 12px;
+    transition: border-color .15s, transform .05s;
+  }
+  .job:hover { border-color: var(--accent); }
+  .job:active { transform: scale(0.997); }
+  .job-top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .job-title { font-weight: 600; font-size: 1.02rem; margin: 0; }
+  .badge {
+    font-size: 0.68rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.04em; padding: 3px 8px; border-radius: 999px;
+    background: var(--new-soft); color: var(--new);
+  }
+  .job-sub { color: var(--muted); font-size: 0.88rem; margin-top: 6px;
+    display: flex; gap: 14px; flex-wrap: wrap; }
+  .job-sub .vc { color: var(--text); font-weight: 600; }
+  .job-sub .dot::before { content: "•"; margin-right: 6px; color: var(--border); }
+
+  .empty { text-align: center; color: var(--muted); padding: 60px 0; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.8rem; text-align: center; }
+  a.link { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🎯 VC Scanner</h1>
+      <p>Praktika &amp; Einstiegsstellen bei Venture-Capital-Fonds in Deutschland.</p>
+      <p class="meta" id="updated">Lade…</p>
+    </header>
+
+    <div class="controls">
+      <input type="search" id="search" placeholder="Suche nach Titel, VC, Ort…" />
+      <select id="vcFilter"><option value="">Alle VCs</option></select>
+      <select id="typeFilter">
+        <option value="">Alle Typen</option>
+        <option value="praktik">Praktikum</option>
+        <option value="werkstudent">Werkstudent</option>
+        <option value="intern">Internship</option>
+        <option value="analyst">Analyst</option>
+        <option value="graduate">Graduate/Junior</option>
+      </select>
+    </div>
+
+    <div class="stats" id="stats"></div>
+    <div id="list"></div>
+
+    <footer>
+      Automatisch aktualisiert via GitHub Actions · Quelle: Karriereseiten der jeweiligen VCs.
+    </footer>
+  </div>
+
+<script>
+const state = { jobs: [] };
+
+function fmtDate(iso) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  return d.toLocaleDateString("de-DE", { day: "2-digit", month: "short", year: "numeric" });
+}
+function isNew(iso) {
+  if (!iso) return false;
+  return (Date.now() - new Date(iso).getTime()) < 3 * 24 * 3600 * 1000; // < 3 Tage
+}
+
+async function load() {
+  try {
+    const res = await fetch("./data/jobs.json?_=" + Date.now());
+    const data = await res.json();
+    state.jobs = data.jobs || [];
+    document.getElementById("updated").textContent =
+      "Zuletzt aktualisiert: " + (data.updated_at ? fmtDate(data.updated_at) : "—") +
+      " · " + (data.count ?? state.jobs.length) + " offene Stellen";
+    buildVcOptions();
+    render();
+  } catch (e) {
+    document.getElementById("list").innerHTML =
+      '<div class="empty">Konnte Daten nicht laden. Läuft der Scanner schon?</div>';
+  }
+}
+
+function buildVcOptions() {
+  const sel = document.getElementById("vcFilter");
+  const vcs = [...new Set(state.jobs.map(j => j.vc))].sort();
+  for (const vc of vcs) {
+    const o = document.createElement("option");
+    o.value = vc; o.textContent = vc; sel.appendChild(o);
+  }
+}
+
+function render() {
+  const q = document.getElementById("search").value.toLowerCase();
+  const vc = document.getElementById("vcFilter").value;
+  const type = document.getElementById("typeFilter").value.toLowerCase();
+
+  let jobs = state.jobs.filter(j => {
+    const hay = (j.title + " " + j.vc + " " + (j.location||"") + " " + (j.department||"")).toLowerCase();
+    if (q && !hay.includes(q)) return false;
+    if (vc && j.vc !== vc) return false;
+    if (type && !j.title.toLowerCase().includes(type)) return false;
+    return true;
+  });
+
+  const list = document.getElementById("list");
+  document.getElementById("stats").textContent =
+    jobs.length + " Stelle" + (jobs.length === 1 ? "" : "n") + " angezeigt";
+
+  if (!jobs.length) {
+    list.innerHTML = '<div class="empty">Keine passenden Stellen. 🔍</div>';
+    return;
+  }
+
+  list.innerHTML = jobs.map(j => `
+    <a class="job" href="${j.url}" target="_blank" rel="noopener">
+      <div class="job-top">
+        <p class="job-title">${escapeHtml(j.title)}</p>
+        ${isNew(j.first_seen) ? '<span class="badge">Neu</span>' : ''}
+      </div>
+      <div class="job-sub">
+        <span class="vc">${escapeHtml(j.vc)}</span>
+        ${j.location ? `<span class="dot">${escapeHtml(j.location)}</span>` : ''}
+        ${j.department ? `<span class="dot">${escapeHtml(j.department)}</span>` : ''}
+        ${j.first_seen ? `<span class="dot">seit ${fmtDate(j.first_seen)}</span>` : ''}
+      </div>
+    </a>`).join("");
+}
+
+function escapeHtml(s) {
+  return (s||"").replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+
+["search","vcFilter","typeFilter"].forEach(id =>
+  document.getElementById(id).addEventListener("input", render));
+
+load();
+</script>
+</body>
+</html>
