@@ -38,7 +38,7 @@ ENTRY_TERMS = [
     "absolvent", "absolventen", "absolventin", "graduate", "new grad", "entry level", "entry-level",
     "berufseinsteiger", "trainee", "junior", "einsteiger", "einstieg",
     # VC-typische Einstiegsrollen
-    "analyst", "investment analyst", "associate intern", "fellow", "fellowship",
+    "analyst", "investment analyst", "associate", "associate intern", "fellow", "fellowship",
     "venture fellow", "campus",
 ]
 
