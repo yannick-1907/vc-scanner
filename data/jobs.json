@@ -1,1009 +1,1185 @@
 {
-  "updated_at": "2026-09-18T21:53:37.655492+00:00",
-  "count": 15,
+  "updated_at": "2026-09-18T22:54:14.613205+00:00",
+  "count": 30,
   "vcs": [
     {
+      "name": "1745 Ventures",
+      "website": "https://www.1745ventures.com/careers",
+      "mode": "page",
+      "scannable": true
+    },
+    {
       "name": "2150",
-      "website": "https://www.2150.vc",
-      "scannable": false
+      "website": "https://2150.getro.com/jobs",
+      "mode": "feed",
+      "scannable": true
     },
     {
-      "name": "468 Capital",
-      "website": "https://468cap.com/careers",
-      "scannable": false
-    },
-    {
-      "name": "Accel",
-      "website": "https://www.accel.com/careers",
-      "scannable": false
-    },
-    {
-      "name": "Acton Capital",
-      "website": "https://www.actoncapital.com",
-      "scannable": false
+      "name": "3VC Partners",
+      "website": "https://three.vc",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Ada Ventures",
-      "website": "https://www.adaventures.com",
-      "scannable": false
+      "website": "https://www.adaventures.com/talent-network",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Addition",
-      "website": "https://addition.com",
-      "scannable": false
+      "name": "AENU",
+      "website": "https://www.aenu.com/careers",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Allianz X",
       "website": "https://allianzx.com/jobs",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Alstin Capital",
       "website": "https://alstin.capital/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Alven",
-      "website": "https://alven.co/careers",
-      "scannable": false
+      "website": "https://www.welcometothejungle.com/fr/companies/mytraffic/jobs/software-engineer-m-f_madrid",
+      "mode": "page",
+      "scannable": true
+    },
+    {
+      "name": "Amino Capital",
+      "website": "https://www.aminocapital.com/careers",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Ananda Impact Ventures",
       "website": "https://ananda.vc",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Andreessen Horowitz",
-      "website": "https://a16z.com/jobs",
-      "scannable": false
-    },
-    {
-      "name": "Anthemis Group",
-      "website": "https://www.anthemis.com/careers",
-      "scannable": false
     },
     {
       "name": "Antler",
       "website": "https://www.antler.co/careers",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "APX",
-      "website": "https://apx.vc",
-      "scannable": false
-    },
-    {
-      "name": "Atlantic Food Labs",
-      "website": "https://www.foodlabs.com/careers",
-      "scannable": false
     },
     {
       "name": "Atlantic Labs",
       "website": "https://atlanticlabs.com/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Atomico",
-      "website": "https://atomico.com",
-      "scannable": false
+      "name": "Atlantis Ventures",
+      "website": "https://www.atlantis-ventures.com/careers",
+      "mode": "feed",
+      "scannable": true
     },
     {
-      "name": "Auxxo",
-      "website": "https://auxxo.de",
-      "scannable": false
+      "name": "Avala Capital",
+      "website": "https://avalacapital.com/",
+      "mode": "feed",
+      "scannable": true
+    },
+    {
+      "name": "Axel Springer Digital Ventures",
+      "website": "https://career.axelspringer.com/de/",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Backed VC",
-      "website": "https://www.backed.vc",
-      "scannable": false
+      "website": "https://talent.backed.vc/jobs",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Bain Capital Ventures",
-      "website": "https://baincapitalventures.com",
-      "scannable": false
+      "website": "https://jobs.baincapitalventures.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Balderton Capital",
-      "website": "https://www.balderton.com",
-      "scannable": false
+      "website": "https://careers.balderton.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "BASF Venture Capital",
-      "website": "https://www.basf.com/careers",
-      "scannable": false
+      "website": "https://www.basf.com/global/en/careers/life-at-basf",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Battery Ventures",
       "website": "https://battery.com",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "BayBG",
-      "website": "https://baybg.com",
-      "scannable": false
-    },
-    {
       "name": "Bayern Kapital",
-      "website": "https://bayernkapital.de",
-      "scannable": false
+      "website": "https://bayernkapital.de/bayern-kapital/karriere/",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Benchmark",
-      "website": "https://benchmark.com",
-      "scannable": false
+      "name": "BayWa Venture",
+      "website": "https://www.baywa.com/jobs-karriere/auf-einen-blick",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Bertelsmann Investments",
-      "website": "https://www.bertelsmann-investments.com",
-      "scannable": false
-    },
-    {
-      "name": "Bessemer Venture Partners",
-      "website": "https://www.bvp.com/jobs",
-      "scannable": false
+      "website": "https://jobsearch.createyourowncareer.com/errorpage/?errortype=Exception",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "BITKRAFT Ventures",
       "website": "https://bitkraft.vc/careers",
+      "mode": "feed",
+      "scannable": true
+    },
+    {
+      "name": "BitStone Capital",
+      "website": "https://www.bitstone.capital/karriere/",
+      "mode": "page",
+      "scannable": true
+    },
+    {
+      "name": "Blackfin Capital Partners",
+      "website": "http://blackfin.com/contact/?tab=2",
+      "mode": "page",
       "scannable": true
     },
     {
       "name": "Blossom Capital",
-      "website": "https://www.blossomcap.com",
-      "scannable": false
+      "website": "https://www.blossomcap.com/talent",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "BMW i Ventures",
-      "website": "https://www.bmwiventures.com",
-      "scannable": false
+      "name": "BlueYard Capital",
+      "website": "https://blueyard.com",
+      "mode": "feed",
+      "scannable": true
     },
     {
-      "name": "Bond",
-      "website": "https://www.bondcap.com",
-      "scannable": false
+      "name": "Blumberg Capital",
+      "website": "https://blumbergcapital.com/careers",
+      "mode": "feed",
+      "scannable": true
     },
     {
-      "name": "Bpifrance",
-      "website": "https://www.bpifrance.com",
-      "scannable": false
+      "name": "Bonventure",
+      "website": "https://www.bonventure.de/careers",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Brandenburg Kapital",
-      "website": "https://www.brandenburg-kapital.de",
-      "scannable": false
+      "website": "https://www.brandenburg-kapital.de/de/bk/karriere.html",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Breakthrough Energy Ventures",
       "website": "https://www.breakthroughenergy.org/careers",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Breega",
-      "website": "https://www.breega.com",
-      "scannable": false
+      "name": "Brose Ventures",
+      "website": "https://www.brose.com/de-en/career/",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "btov / b2venture",
       "website": "https://www.b2venture.vc",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "byFounders",
-      "website": "https://byfounders.vc",
-      "scannable": false
+      "name": "Börse Stuttgart Digital Ventures",
+      "website": "https://www.bsdigital.com/karriere",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Calm/Storm Ventures",
-      "website": "https://www.calmstorm.vc/jobs",
-      "scannable": false
-    },
-    {
-      "name": "Capital300",
-      "website": "https://capital300.com",
-      "scannable": false
+      "name": "Capmont Technology",
+      "website": "https://careers.cmont.com/companies/capmont-technology#content",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "capnamic Ventures",
       "website": "https://capnamic.com/jobs",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Cathay Innovation",
       "website": "https://cathayinnovation.com",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Cavalry Ventures",
-      "website": "https://cavalry.vc",
-      "scannable": false
     },
     {
       "name": "Cherry Ventures",
       "website": "https://cherry.vc",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Cisco Investments",
-      "website": "https://www.ciscoinvestments.com",
-      "scannable": false
-    },
-    {
-      "name": "Coatue",
-      "website": "https://www.coatue.com",
-      "scannable": false
     },
     {
       "name": "coparion",
       "website": "https://join.com/companies/coparion",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Creandum",
       "website": "https://creandum.com",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Creathor Ventures",
       "website": "https://www.creathor.com/careers",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Cusp Capital",
       "website": "https://cuspcapital.com",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Daphni",
-      "website": "https://www.daphni.com/careers",
-      "scannable": false
+      "name": "D11Z Ventures",
+      "website": "https://d11z.com/jobs",
+      "mode": "feed",
+      "scannable": true
     },
     {
-      "name": "Dawn Capital",
-      "website": "https://www.dawncapital.com/jobs",
-      "scannable": false
+      "name": "DeepTech & Climate Fonds",
+      "website": "https://dtcf.de/careers",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Deutsche Telekom Capital Partners",
       "website": "https://www.dtcp.capital/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "DN Capital",
       "website": "https://dncapital.com",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Dragoneer",
-      "website": "https://www.dragoneer.com",
-      "scannable": false
     },
     {
       "name": "DST Global",
       "website": "https://dst.global/careers",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Earlybird",
       "website": "https://earlybird.com",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "eCAPITAL",
-      "website": "https://ecapital.vc/careers",
-      "scannable": false
-    },
-    {
-      "name": "Eight Roads",
-      "website": "https://eightroads.com",
-      "scannable": false
     },
     {
       "name": "Elaia",
       "website": "https://elaia.com/careers",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Energy Impact Partners",
       "website": "https://www.energyimpactpartners.com/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Entrepreneur First",
-      "website": "https://www.joinef.com/careers",
-      "scannable": false
+      "name": "Entrée Capital",
+      "website": "https://entreecap.com/jobs/hiring-office-manager-and-operations",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "EQT Ventures",
       "website": "https://eqtgroup.com",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "ETF Partners",
-      "website": "https://etfpartners.com",
-      "scannable": false
+      "name": "EquityPitcher",
+      "website": "https://jobs.equitypitcher.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Eurazeo",
-      "website": "https://www.eurazeo.com",
-      "scannable": false
+      "website": "https://www.eurazeo.com/en/talents",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "European Investment Fund (EIF)",
-      "website": "https://eif.org",
-      "scannable": false
+      "website": "https://www.eif.org/work-with-us/careers",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "EWOR",
       "website": "https://www.ewor.com",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Extantia Capital",
       "website": "https://join.com/companies/extantia",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Fabric Ventures",
-      "website": "https://www.fabric.vc",
-      "scannable": false
+      "website": "https://careers.fabric.vc/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "FinTech Collective",
       "website": "https://fintechcollective.com/careers",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "FirstMark",
-      "website": "https://firstmark.com/join",
-      "scannable": false
+      "name": "First Momentum",
+      "website": "https://jobs.firstmomentum.vc/jobs",
+      "mode": "feed",
+      "scannable": true
     },
     {
-      "name": "firstminute capital",
-      "website": "https://www.firstminute.capital",
-      "scannable": false
-    },
-    {
-      "name": "Fly Ventures",
-      "website": "https://fly.vc",
-      "scannable": false
+      "name": "First Round Capital",
+      "website": "https://www.firstround.com",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Forbion",
-      "website": "https://forbion.com",
-      "scannable": false
+      "website": "https://forbion.com/about-us/careers/",
+      "mode": "page",
+      "scannable": true
+    },
+    {
+      "name": "Found Fair",
+      "website": "https://foundfair.de/career/",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Foundamental",
       "website": "https://www.foundamental.com",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Founderful",
-      "website": "https://www.founderful.com/jobs",
-      "scannable": false
-    },
-    {
-      "name": "Founders Fund",
-      "website": "https://foundersfund.com",
-      "scannable": false
+      "website": "https://jobs.founderful.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Freigeist Capital",
-      "website": "https://freigeist.com/career",
-      "scannable": false
+      "website": "https://freigeist.com/career/",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Fund F",
-      "website": "https://www.fund-f.com",
-      "scannable": false
+      "name": "Freiraum VC",
+      "website": "https://www.freiraum.vc/",
+      "mode": "feed",
+      "scannable": true
+    },
+    {
+      "name": "Futury Capital",
+      "website": "https://futurycapital.vc/#home",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "General Atlantic",
       "website": "https://www.generalatlantic.com/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "General Catalyst",
       "website": "https://www.generalcatalyst.com",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Global Founders Capital",
       "website": "https://www.globalfounders.vc",
+      "mode": "feed",
+      "scannable": true
+    },
+    {
+      "name": "Green Generation Fund",
+      "website": "https://www.ggf.vc/",
+      "mode": "page",
       "scannable": true
     },
     {
       "name": "Greycroft",
-      "website": "https://greycroft.com",
-      "scannable": false
-    },
-    {
-      "name": "Greylock",
-      "website": "https://greylock.com/jobs",
-      "scannable": false
+      "website": "https://jobs.greycroft.com/companies",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "GV",
-      "website": "https://www.gv.com/jobs",
-      "scannable": false
+      "website": "https://jobs.gv.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Headline",
       "website": "https://headline.com",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Heartcore Capital",
-      "website": "https://www.heartcore.com",
-      "scannable": false
-    },
-    {
-      "name": "Hedosophia",
-      "website": "https://hedosophia.com",
-      "scannable": false
     },
     {
       "name": "High-Tech Gründerfonds (HTGF)",
       "website": "https://www.htgf.de/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Highland Europe",
-      "website": "https://highlandeurope.com",
-      "scannable": false
+      "website": "https://careers.highlandeurope.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Hoxton Ventures",
-      "website": "https://hoxtonventures.com",
-      "scannable": false
-    },
-    {
-      "name": "Hummingbird Ventures",
-      "website": "https://www.hummingbird.vc",
-      "scannable": false
+      "website": "https://jobs.hoxtonventures.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "HV Capital",
       "website": "https://hvcapital.com/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "IBB Ventures",
-      "website": "https://www.ibbventures.de/jobs",
-      "scannable": false
+      "website": "https://www.ibbventures.de/en/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "ICONIQ Capital",
-      "website": "https://iconiqcapital.com",
-      "scannable": false
+      "website": "https://www.iconiq.com/careers",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "IFB Innovationsstarter Hamburg",
-      "website": "https://www.ifbhh.de/karriere",
-      "scannable": false
+      "website": "https://www.ifbhh.de/die-ifb-hamburg/karriere",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Index Ventures",
       "website": "https://www.indexventures.com:443",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Innovationsfonds Schleswig-Holstein",
-      "website": "https://wtsh.de/karriere",
-      "scannable": false
+      "website": "https://wtsh.de/de/karriere",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Inovia Capital",
-      "website": "https://inovia.vc",
-      "scannable": false
+      "website": "https://careers.inovia.vc/jobs",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Insight Partners",
       "website": "https://www.insightpartners.com/jobs",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Intel Capital",
-      "website": "https://www.intelcapital.com",
-      "scannable": false
-    },
-    {
       "name": "Inventure",
-      "website": "https://www.inventure.vc",
-      "scannable": false
+      "website": "https://www.inventure.vc/portfolio",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "IVP",
-      "website": "https://www.ivp.com/careers",
-      "scannable": false
+      "name": "Invisible Hand Ventures",
+      "website": "https://www.i-hand.de/",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "JOIN Capital",
       "website": "https://join-capital.com/",
+      "mode": "feed",
+      "scannable": true
+    },
+    {
+      "name": "K5 Advisors",
+      "website": "https://k5.io/",
+      "mode": "page",
       "scannable": true
     },
     {
       "name": "KfW Capital",
-      "website": "https://www.kfw-capital.de/careers",
-      "scannable": false
+      "website": "https://www.kfw-capital.de/Karriere/",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Kibo Ventures",
-      "website": "https://www.kiboventures.com",
-      "scannable": false
-    },
-    {
-      "name": "Kima Ventures",
-      "website": "https://www.kimaventures.com",
-      "scannable": false
-    },
-    {
-      "name": "Kindred Capital",
-      "website": "https://kindredcapital.vc",
-      "scannable": false
-    },
-    {
-      "name": "Kinnevik",
-      "website": "https://www.kinnevik.com/career",
-      "scannable": false
-    },
-    {
-      "name": "Kizoo Technology Capital",
-      "website": "https://kizoo.com",
-      "scannable": false
-    },
-    {
-      "name": "Kleiner Perkins",
-      "website": "https://www.kleinerperkins.com",
-      "scannable": false
+      "name": "Kiko Ventures",
+      "website": "https://kiko.vc",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Kompas VC",
       "website": "https://www.kompas.vc/careers",
-      "scannable": false
-    },
-    {
-      "name": "Kurma Partners",
-      "website": "https://www.kurmapartners.com",
-      "scannable": false
-    },
-    {
-      "name": "La Famiglia",
-      "website": "https://www.lafamiglia.vc",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Lakestar",
       "website": "https://www.lakestar.com",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Latitude",
-      "website": "https://www.phoenixcourt.vc",
-      "scannable": false
+      "website": "https://jobs.phoenixcourt.vc/jobs",
+      "mode": "page",
+      "scannable": true
+    },
+    {
+      "name": "Left Lane Capital",
+      "website": "https://jobs.leftlanecap.com/companies",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Lifeline Ventures",
-      "website": "https://www.lifelineventures.com/careers",
-      "scannable": false
+      "website": "https://www.lifelineventures.com/careers/",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Lightrock",
-      "website": "https://lightrock.com",
-      "scannable": false
+      "website": "https://careers.lightrock.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Lightspeed Venture Partners",
-      "website": "https://lsvp.com",
-      "scannable": false
+      "website": "https://jobs.lsvp.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "LocalGlobe",
-      "website": "https://www.phoenixcourt.vc",
-      "scannable": false
-    },
-    {
-      "name": "LSP",
-      "website": "https://eqtgroup.com",
-      "scannable": false
+      "website": "https://jobs.phoenixcourt.vc/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Lunar Ventures",
       "website": "https://www.lunar.vc/careers",
-      "scannable": false
-    },
-    {
-      "name": "M12",
-      "website": "https://m12.vc",
-      "scannable": false
-    },
-    {
-      "name": "Maki.vc",
-      "website": "https://maki.vc",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Mangrove Capital Partners",
-      "website": "https://www.mangrove.vc",
-      "scannable": false
+      "website": "https://www.mangrove.vc/about/careers",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Medicxi",
-      "website": "https://www.medicxi.com",
-      "scannable": false
+      "name": "Media Ventures",
+      "website": "https://x.com/joinspotted",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Merantix Capital",
-      "website": "https://www.merantix-capital.com",
-      "scannable": false
+      "website": "https://careers.merantix-aicampus.com/companies?filter=eyJvcmdhbml6YXRpb24udG9waWNzLmNvbW11bml0aWVzIjpbIk1lcmFudGl4IFBvcnRmb2xpb3MiXX0%3D",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Merck Ventures",
       "website": "https://merckventures.com/careers",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "MMC Ventures",
-      "website": "https://mmc.vc",
-      "scannable": false
-    },
-    {
-      "name": "Molten Ventures",
-      "website": "https://www.moltenventures.com",
-      "scannable": false
-    },
-    {
-      "name": "Motive Partners",
-      "website": "https://motivepartners.com",
-      "scannable": false
+      "name": "MIG Capital",
+      "website": "https://www.mig.ag/",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Mountain Partners",
       "website": "https://mountain-partners.ch/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "NEA",
-      "website": "https://nea.com",
-      "scannable": false
+      "name": "MS&AD Ventures",
+      "website": "https://msad.vc/portfolio/join-digital",
+      "mode": "page",
+      "scannable": true
+    },
+    {
+      "name": "Munich Re Ventures",
+      "website": "https://careers.munichre.com/en/job/birmingham/underwriter-cargo-and-freight/3342/44886268864",
+      "mode": "page",
+      "scannable": true
+    },
+    {
+      "name": "Nauta Capital",
+      "website": "https://www.nautacapital.com/careers",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Next47",
       "website": "https://www.n47.com",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Northzone",
       "website": "https://northzone.com",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Norwest",
-      "website": "https://nvp.com",
-      "scannable": false
+      "website": "https://www.norwest.com/portfolio-success/talent-and-network-development/",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Notion Capital",
-      "website": "https://www.notioncapital.com",
-      "scannable": false
-    },
-    {
-      "name": "Novartis Venture Fund",
-      "website": "https://www.nvfund.com",
-      "scannable": false
+      "website": "https://jobs.notioncapital.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Octopus Ventures",
-      "website": "https://octopusventures.com",
-      "scannable": false
-    },
-    {
-      "name": "Pale Blue Dot",
-      "website": "https://paleblue.vc/jobs",
-      "scannable": false
+      "website": "https://octopusgroup.com/careers/listings/?search=&department=octopus-ventures",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Partech",
       "website": "https://partechpartners.com",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Passion Capital",
-      "website": "https://passioncapital.com",
-      "scannable": false
-    },
-    {
       "name": "Peak",
-      "website": "https://peak.capital/jobs",
-      "scannable": false
+      "website": "https://jobs.peak.capital/jobs",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Picus Capital",
       "website": "https://www.picuscap.com/career",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Pioneer Fund",
-      "website": "https://www.pioneerfund.vc/careers",
-      "scannable": false
     },
     {
       "name": "Planet A Ventures",
       "website": "https://planeta.vc/careers",
-      "scannable": false
-    },
-    {
-      "name": "Plural VC",
-      "website": "https://www.plural.vc",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Point Nine",
       "website": "https://www.pointnine.com",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Porsche Ventures",
-      "website": "https://porsche.ventures",
-      "scannable": false
     },
     {
       "name": "Project A Ventures",
       "website": "https://www.project-a.vc/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Prosus Ventures",
-      "website": "https://prosus.com",
-      "scannable": false
+      "name": "Promus Ventures",
+      "website": "https://jobs.promusventures.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Qualcomm Ventures",
-      "website": "https://www.qualcommventures.com",
-      "scannable": false
+      "name": "Quadia Ventures",
+      "website": "https://quadia.ch/2019/05/06/joint-quadia-and-degroof-petercam-fund-invests-in-opes-solutions-and-les-coteaux-nantais/",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Rebel Fund",
-      "website": "https://www.rebelfund.vc",
-      "scannable": false
+      "name": "Realyze Ventures",
+      "website": "https://realyzeventures.com/jobs",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Redalpine",
       "website": "https://www.redalpine.com/career",
-      "scannable": false
-    },
-    {
-      "name": "Redpoint eventures",
-      "website": "https://www.redpoint.com",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Redstone",
       "website": "https://redstone.vc/careers",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Ribbit Capital",
-      "website": "https://www.ribbitcap.com",
-      "scannable": false
+      "name": "Revent",
+      "website": "https://careers.revent.vc/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Robert Bosch Venture Capital",
-      "website": "https://bosch.ventures",
-      "scannable": false
+      "name": "Richmond View Ventures",
+      "website": "https://rvv.tv/jobs",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Rocket Internet",
       "website": "https://rocket-internet.com/careers",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Seaya",
-      "website": "https://seaya.com",
-      "scannable": false
+      "name": "Seed + Speed Ventures",
+      "website": "https://www.seedandspeed.com",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Senovo",
       "website": "https://join.com/companies/senovo",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Sequoia Capital",
-      "website": "https://sequoiacap.com/jobs",
-      "scannable": false
+      "website": "https://jobs.sequoiacap.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "SevenVentures",
-      "website": "https://www.commerceandventures.com",
-      "scannable": false
+      "name": "Seventure Partners",
+      "website": "https://www.seventure.fr/envoyer-une-candidature/",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Singular",
-      "website": "https://www.singular.vc",
-      "scannable": false
+      "name": "Smart Infrastructure Ventures",
+      "website": "https://siventures.de/careers",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Sofina",
-      "website": "https://sofinagroup.com",
-      "scannable": false
-    },
-    {
-      "name": "Sofinnova Partners",
-      "website": "https://sofinnovapartners.com",
-      "scannable": false
+      "website": "https://www.sofinagroup.com/en/careers",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "SoftBank Vision Fund",
-      "website": "https://visionfund.com/careers",
-      "scannable": false
+      "website": "https://visionfund.com/work-with-us",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Speedinvest",
       "website": "https://www.speedinvest.com",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Statkraft Ventures",
-      "website": "https://www.statkraftventures.com",
-      "scannable": false
-    },
-    {
-      "name": "Stride.VC",
-      "website": "https://stride.vc",
-      "scannable": false
-    },
-    {
-      "name": "Summit Partners",
-      "website": "https://www.summitpartners.com",
-      "scannable": false
+      "name": "SURPLUS Equity Partners",
+      "website": "https://www.alpx-group.com/careers",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Swisscom Ventures",
-      "website": "https://www.swisscom.ch/careers",
-      "scannable": false
+      "website": "https://www.swisscom.ch/careers/",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Target Global",
-      "website": "https://targetglobal.vc",
-      "scannable": false
+      "name": "TAKKT Beteiligungen",
+      "website": "https://www.takkt.de/karriere",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "TCV",
-      "website": "https://www.tcv.com",
-      "scannable": false
+      "name": "Trill Impact",
+      "website": "https://www.trillimpact.com/career",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Technologiegründerfonds Sachsen",
-      "website": "https://www.cfh.de",
-      "scannable": false
-    },
-    {
-      "name": "Tengelmann Ventures",
-      "website": "https://tengelmann-ventures.com/career",
-      "scannable": false
-    },
-    {
-      "name": "Tiger Global",
-      "website": "https://www.tigerglobal.com",
-      "scannable": false
-    },
-    {
-      "name": "Trade Ventures",
-      "website": "https://www.tradeventures.com",
-      "scannable": false
-    },
-    {
-      "name": "Trind Ventures",
-      "website": "https://trind.vc",
-      "scannable": false
-    },
-    {
-      "name": "TVM Capital Life Science",
-      "website": "https://tvm-capital.com",
-      "scannable": false
-    },
-    {
-      "name": "Union Square Ventures",
-      "website": "https://www.usv.com/jobs",
-      "scannable": false
+      "name": "TS Ventures",
+      "website": "https://www.tsventures.io/careers",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "UVC Partners",
       "website": "https://www.uvcpartners.com/jobs",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "Valar Ventures",
-      "website": "https://valar.com",
-      "scannable": false
-    },
-    {
       "name": "Venionaire Capital",
-      "website": "https://www.venionaire.com/careers",
-      "scannable": false
+      "website": "https://www.venionaire.com/about-alt/careers/?s=",
+      "mode": "page",
+      "scannable": true
     },
     {
-      "name": "Ventech",
-      "website": "https://ventechvc.com",
-      "scannable": false
+      "name": "Venture Stars",
+      "website": "https://www.venture-stars.com/",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "Verve Ventures",
-      "website": "https://www.verve.vc/join",
-      "scannable": false
-    },
-    {
-      "name": "Vireo Ventures",
-      "website": "https://vireo.vc",
-      "scannable": false
+      "website": "https://www.verve.vc/join?utm_source=verve&utm_medium=nav&utm_campaign=main&utm_term=join&utm_content=text",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Visionaries Club",
       "website": "https://join.com/companies/visionariesclub",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Vito One",
-      "website": "https://www.viessmann.group:443",
-      "scannable": false
     },
     {
       "name": "Vorwerk Ventures",
       "website": "https://vorwerkventures.com",
+      "mode": "feed",
       "scannable": true
-    },
-    {
-      "name": "Vsquared Ventures",
-      "website": "https://vsquared.vc/career",
-      "scannable": false
-    },
-    {
-      "name": "Vy Capital",
-      "website": "https://vycapital.com",
-      "scannable": false
-    },
-    {
-      "name": "Wayra",
-      "website": "https://wayra.com",
-      "scannable": false
     },
     {
       "name": "Wellington Partners",
       "website": "https://wellington-partners.com",
+      "mode": "feed",
       "scannable": true
     },
     {
-      "name": "White Star Capital",
-      "website": "https://whitestarcapital.com",
-      "scannable": false
+      "name": "Wenvest Capital",
+      "website": "https://www.wenvest.capital/",
+      "mode": "feed",
+      "scannable": true
     },
     {
       "name": "World Fund",
       "website": "https://www.worldfund.vc/career",
-      "scannable": false
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "XAnge",
       "website": "https://www.xange.vc",
+      "mode": "feed",
       "scannable": true
     },
     {
       "name": "Y Combinator",
-      "website": "https://ycombinator.com",
-      "scannable": false
-    },
-    {
-      "name": "Yabeo Capital",
-      "website": "https://yabeo.de/jobs",
-      "scannable": false
+      "website": "https://www.ycombinator.com/jobs",
+      "mode": "page",
+      "scannable": true
     },
     {
       "name": "Ysios Capital",
-      "website": "https://ysioscapital.com/join-us",
-      "scannable": false
+      "website": "https://ysioscapital.com/join-us/",
+      "mode": "page",
+      "scannable": true
+    },
+    {
+      "name": "YZR Capital",
+      "website": "https://yzr-capital.com/careers",
+      "mode": "feed",
+      "scannable": true
     }
   ],
   "jobs": [
+    {
+      "id": "careerpage:9f437a2c747f",
+      "title": "Visiting Analyst (m/w/d)",
+      "location": "Köln",
+      "url": "https://www.bitstone.capital/karriere/visiting-analyst-m-w-d/",
+      "department": "",
+      "vc": "BitStone Capital",
+      "vc_website": "https://www.bitstone.capital/karriere/",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "getro:careers.cmont.com:50378535",
+      "title": "Visiting Analyst - Venture Capital",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://careers.cmont.com/companies/capmont-technology/jobs/50378535-visiting-analyst-venture-capital",
+      "department": "",
+      "vc": "Capmont Technology",
+      "vc_website": "https://careers.cmont.com/companies/capmont-technology#content",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "careerpage:e121c26dede0",
+      "title": "Automation Intern (f/m/d)",
+      "location": "Köln",
+      "url": "https://capnamic.com/post/automation-intern-f-m-d",
+      "department": "",
+      "vc": "capnamic Ventures",
+      "vc_website": "https://capnamic.com/jobs",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "careerpage:188226389bdc",
+      "title": "Investment Analyst (f/m/d)",
+      "location": "Köln",
+      "url": "https://capnamic.com/post/investment-analyst-m-f-d",
+      "department": "",
+      "vc": "capnamic Ventures",
+      "vc_website": "https://capnamic.com/jobs",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "getro:jobs.firstmomentum.vc:93023031",
+      "title": "VC Investment Intern (Munich or Remote) - 4-6 months from Oct 2026",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16696392-vc-investment-intern-munich-or-remote-4-6-months-from-oct-2026",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "getro:jobs.firstmomentum.vc:92520462",
+      "title": "Visiting Associate (Munich or Remote) - 6-12 months from October 2026",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16678756-visiting-associate-munich-or-remote-6-12-months-from-october-2026",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "getro:careers.merantix-aicampus.com:81060656",
+      "title": "Growth & Sales Intern (f/m/d) (METEORIC)",
+      "location": "Berlin, Germany, Germany, Europe",
+      "url": "https://merantix-capital.jobs.personio.com/job/2650486",
+      "department": "",
+      "vc": "Merantix Capital",
+      "vc_website": "https://careers.merantix-aicampus.com/companies?filter=eyJvcmdhbml6YXRpb24udG9waWNzLmNvbW11bml0aWVzIjpbIk1lcmFudGl4IFBvcnRmb2xpb3MiXX0%3D",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "getro:careers.merantix-aicampus.com:72433909",
+      "title": "Visiting Analyst: AI Automations & Content (@Merantix Capital)",
+      "location": "Berlin, Germany, Germany, Europe",
+      "url": "https://merantix-capital.jobs.personio.com/job/2546391",
+      "department": "",
+      "vc": "Merantix Capital",
+      "vc_website": "https://careers.merantix-aicampus.com/companies?filter=eyJvcmdhbml6YXRpb24udG9waWNzLmNvbW11bml0aWVzIjpbIk1lcmFudGl4IFBvcnRmb2xpb3MiXX0%3D",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "getro:careers.merantix-aicampus.com:72433905",
+      "title": "Growth & Sales Intern (f/m/d) (Stealth AI Energy Venture)",
+      "location": "Berlin, Germany, Germany, Europe",
+      "url": "https://merantix-capital.jobs.personio.com/job/2459250",
+      "department": "",
+      "vc": "Merantix Capital",
+      "vc_website": "https://careers.merantix-aicampus.com/companies?filter=eyJvcmdhbml6YXRpb24udG9waWNzLmNvbW11bml0aWVzIjpbIk1lcmFudGl4IFBvcnRmb2xpb3MiXX0%3D",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "recruitee:anandaventuresgmbh:355378",
+      "title": "(Visiting) Analyst (M/F/D) - Munich 2026",
+      "location": "Munich, Bayern, Deutschland",
+      "url": "https://anandaventuresgmbh.recruitee.com/o/visiting-analyst-mfd-munich-2026",
+      "department": null,
+      "vc": "Ananda Impact Ventures",
+      "vc_website": "https://ananda.vc",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "personio:dtcf:2026430",
+      "title": "(Visiting) Analyst:in Investment Team - DTCF",
+      "location": "Bonn",
+      "url": "https://dtcf.jobs.personio.de/job/2026430",
+      "department": "Investment Team",
+      "vc": "DeepTech & Climate Fonds",
+      "vc_website": "https://dtcf.de/careers",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "breezy:dtcp:3479fa4251d5",
+      "title": "Intern (m/f/d) | Strategy Office",
+      "location": "Frankfurt am Main, DE",
+      "url": "https://dtcp.breezy.hr/p/3479fa4251d5-intern-m-f-d-strategy-office",
+      "department": "",
+      "vc": "Deutsche Telekom Capital Partners",
+      "vc_website": "https://www.dtcp.capital/careers",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "breezy:dtcp:12057c4ef6fb",
+      "title": "Investment Intern (m/f/d) | Digital Infrastructure",
+      "location": "Frankfurt am Main, DE",
+      "url": "https://dtcp.breezy.hr/p/12057c4ef6fb-investment-intern-m-f-d-digital-infrastructure",
+      "department": "DTCP Infra",
+      "vc": "Deutsche Telekom Capital Partners",
+      "vc_website": "https://www.dtcp.capital/careers",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "trakstar:dncapital:fk0u5xf",
+      "title": "Associate - Berlin",
+      "location": "Berlin, Germany",
+      "url": "https://dncapital.hire.trakstar.com/jobs/fk0u5xf/",
+      "department": "",
+      "vc": "DN Capital",
+      "vc_website": "https://dncapital.com",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "trakstar:dncapital:fk0hecj",
+      "title": "Visiting Analyst (Investment Team Intern)",
+      "location": "London (UK) or Berlin (DE)",
+      "url": "https://dncapital.hire.trakstar.com/jobs/fk0hecj/",
+      "department": "",
+      "vc": "DN Capital",
+      "vc_website": "https://dncapital.com",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "personio:earlybirdvc-gmbh:2715164",
+      "title": "Investment Intern (m/f/d)",
+      "location": "Munich",
+      "url": "https://earlybirdvc-gmbh.jobs.personio.de/job/2715164",
+      "department": "Investment Intern",
+      "vc": "Earlybird",
+      "vc_website": "https://earlybird.com",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "recruitee:pointnine:2619634",
+      "title": "Platform Associate",
+      "location": "Berlin, Berlin, Germany",
+      "url": "https://pointnine.recruitee.com/o/platform-associate",
+      "department": null,
+      "vc": "Point Nine",
+      "vc_website": "https://www.pointnine.com",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:91246988",
+      "title": "Data & AI - Master Thesis / Internship (f/m/x)",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/91246988-data-ai-master-thesis-internship-f-m-x",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:86907913",
+      "title": "Unsolicited Application: Intern or Working Student for our Investment Team at UVC",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/86907913-unsolicited-application-intern-or-working-student-for-our-investment-team-at-uvc",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "join:bonventure:16619383",
+      "title": "Werkstudent:in IT / AI  (m / w / d), 8-16 Std. / Woche",
+      "location": "München, Deutschland",
+      "url": "https://join.com/companies/bonventure/16718202-werkstudent-in-it-ai-m-w-d-8-16-std-woche",
+      "department": "Anwendungsadministration",
+      "vc": "Bonventure",
+      "vc_website": "https://www.bonventure.de/careers",
+      "first_seen": "2026-09-18T22:20:58.473604+00:00"
+    },
+    {
+      "id": "join:bonventure:15527197",
+      "title": "Werkstudent:in (m/w/d) Kommunikation & Marketing",
+      "location": "München, Deutschland",
+      "url": "https://join.com/companies/bonventure/16724141-werkstudent-in-m-w-d-kommunikation-und-marketing",
+      "department": "PR, Unternehmenskommunikation",
+      "vc": "Bonventure",
+      "vc_website": "https://www.bonventure.de/careers",
+      "first_seen": "2026-09-18T22:20:58.473604+00:00"
+    },
+    {
+      "id": "join:d11z:14832955",
+      "title": "Internship (Investment Team) at D11Z. Ventures, a data-driven Venture Capital Fund (Heilbronn) (m/f/d)",
+      "location": "Heilbronn, Deutschland",
+      "url": "https://join.com/companies/d11z/16719568-internship-investment-team-at-d11z-ventures-a-data-driven-venture-capital-fund-heilbronn-m-f-d",
+      "department": "Business Analyst",
+      "vc": "D11Z Ventures",
+      "vc_website": "https://d11z.com/jobs",
+      "first_seen": "2026-09-18T22:20:58.473604+00:00"
+    },
+    {
+      "id": "join:d11z:14832956",
+      "title": "Internship (Investment Team) at D11Z. Ventures, a data-driven Venture Capital Fund (Munich) (m/f/d)",
+      "location": "München, Deutschland",
+      "url": "https://join.com/companies/d11z/16719569-internship-investment-team-at-d11z-ventures-a-data-driven-venture-capital-fund-munich-m-f-d",
+      "department": "Business Analyst",
+      "vc": "D11Z Ventures",
+      "vc_website": "https://d11z.com/jobs",
+      "first_seen": "2026-09-18T22:20:58.473604+00:00"
+    },
+    {
+      "id": "join:realyzeventures:11974564",
+      "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
+      "location": "Köln, Deutschland",
+      "url": "https://join.com/companies/realyzeventures/16687823-praktikant-in-m-w-d-venture-capital-in-koeln",
+      "department": "Anlageberatung, Vermögensberatung",
+      "vc": "Realyze Ventures",
+      "vc_website": "https://realyzeventures.com/jobs",
+      "first_seen": "2026-09-18T22:20:58.473604+00:00"
+    },
     {
       "id": "join:alstin:14642210",
       "title": "Visiting VC Analyst - Intern Venture Capital (m/f/d)",
@@ -1015,36 +1191,6 @@
       "first_seen": "2026-09-18T21:53:37.655492+00:00"
     },
     {
-      "id": "recruitee:anandaventuresgmbh:355378",
-      "title": "(Visiting) Analyst (M/F/D) - Munich 2026",
-      "location": "Munich, Bayern, Deutschland",
-      "url": "https://anandaventuresgmbh.recruitee.com/o/visiting-analyst-mfd-munich-2026",
-      "department": null,
-      "vc": "Ananda Impact Ventures",
-      "vc_website": "https://ananda.vc",
-      "first_seen": "2026-09-18T21:53:37.655492+00:00"
-    },
-    {
-      "id": "breezy:dtcp:3479fa4251d5",
-      "title": "Intern (m/f/d) | Strategy Office",
-      "location": "Frankfurt am Main, DE",
-      "url": "https://dtcp.breezy.hr/p/3479fa4251d5-intern-m-f-d-strategy-office",
-      "department": "",
-      "vc": "Deutsche Telekom Capital Partners",
-      "vc_website": "https://www.dtcp.capital/careers",
-      "first_seen": "2026-09-18T21:53:37.655492+00:00"
-    },
-    {
-      "id": "breezy:dtcp:12057c4ef6fb",
-      "title": "Investment Intern (m/f/d) | Digital Infrastructure",
-      "location": "Frankfurt am Main, DE",
-      "url": "https://dtcp.breezy.hr/p/12057c4ef6fb-investment-intern-m-f-d-digital-infrastructure",
-      "department": "DTCP Infra",
-      "vc": "Deutsche Telekom Capital Partners",
-      "vc_website": "https://www.dtcp.capital/careers",
-      "first_seen": "2026-09-18T21:53:37.655492+00:00"
-    },
-    {
       "id": "join:b2venture:16441310",
       "title": "Product Associate, Fund Finance @ b2venture (m/f/d)",
       "location": "Berlin, Deutschland",
@@ -1052,26 +1198,6 @@
       "department": "Finanzen",
       "vc": "btov / b2venture",
       "vc_website": "https://www.b2venture.vc",
-      "first_seen": "2026-09-18T21:16:43.315271+00:00"
-    },
-    {
-      "id": "trakstar:dncapital:fk0u5xf",
-      "title": "Associate - Berlin",
-      "location": "Berlin, Germany",
-      "url": "https://dncapital.hire.trakstar.com/jobs/fk0u5xf/",
-      "department": "",
-      "vc": "DN Capital",
-      "vc_website": "https://dncapital.com",
-      "first_seen": "2026-09-18T21:16:43.315271+00:00"
-    },
-    {
-      "id": "trakstar:dncapital:fk0hecj",
-      "title": "Visiting Analyst (Investment Team Intern)",
-      "location": "London (UK) or Berlin (DE)",
-      "url": "https://dncapital.hire.trakstar.com/jobs/fk0hecj/",
-      "department": "",
-      "vc": "DN Capital",
-      "vc_website": "https://dncapital.com",
       "first_seen": "2026-09-18T21:16:43.315271+00:00"
     },
     {
@@ -1095,46 +1221,6 @@
       "first_seen": "2026-09-18T21:16:43.315271+00:00"
     },
     {
-      "id": "getro:talent.uvcpartners.com:91246988",
-      "title": "Data & AI - Master Thesis / Internship (f/m/x)",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/91246988-data-ai-master-thesis-internship-f-m-x",
-      "department": "",
-      "vc": "UVC Partners",
-      "vc_website": "https://www.uvcpartners.com/jobs",
-      "first_seen": "2026-09-18T21:16:43.315271+00:00"
-    },
-    {
-      "id": "getro:talent.uvcpartners.com:86907913",
-      "title": "Unsolicited Application: Intern or Working Student for our Investment Team at UVC",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/86907913-unsolicited-application-intern-or-working-student-for-our-investment-team-at-uvc",
-      "department": "",
-      "vc": "UVC Partners",
-      "vc_website": "https://www.uvcpartners.com/jobs",
-      "first_seen": "2026-09-18T21:16:43.315271+00:00"
-    },
-    {
-      "id": "recruitee:pointnine:2619634",
-      "title": "Platform Associate",
-      "location": "Berlin, Berlin, Germany",
-      "url": "https://pointnine.recruitee.com/o/platform-associate",
-      "department": null,
-      "vc": "Point Nine",
-      "vc_website": "https://www.pointnine.com",
-      "first_seen": "2026-09-18T20:59:28.887410+00:00"
-    },
-    {
-      "id": "personio:earlybirdvc-gmbh:2715164",
-      "title": "Investment Intern (m/f/d)",
-      "location": "Munich",
-      "url": "https://earlybirdvc-gmbh.jobs.personio.de/job/2715164",
-      "department": "Investment Intern",
-      "vc": "Earlybird",
-      "vc_website": "https://earlybird.com",
-      "first_seen": "2026-09-18T20:48:23.574902+00:00"
-    },
-    {
       "id": "ashby:hv:2ed3faab-b1a3-4430-a45a-3f3b25df546b",
       "title": "Investment Intern – Early Stage",
       "location": "Berlin",
@@ -1155,5 +1241,6 @@
       "first_seen": "2026-09-18T20:48:23.574902+00:00"
     }
   ],
-  "errors": []
+  "errors": [],
+  "empty_runs": {}
 }

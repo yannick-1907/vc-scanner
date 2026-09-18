@@ -94,11 +94,12 @@
   .ms-btn .chev { color: var(--muted); font-size: 0.7rem; }
   .ms-panel {
     position: absolute; top: calc(100% + 6px); left: 0; z-index: 10;
-    width: max(100%, 280px); max-height: 380px; overflow: auto;
+    width: max(100%, 280px); max-height: 420px; overflow: auto;
     background: var(--surface); border: 1px solid var(--border);
     border-radius: 12px; padding: 6px; box-shadow: 0 12px 32px rgba(0,0,0,.28);
   }
   .ms-panel[hidden] { display: none; }
+  .ms-search { width: 100%; margin: 2px 0 8px; padding: 8px 10px; font-size: 0.86rem; }
   .ms-actions { display: flex; gap: 8px; padding: 4px 6px 8px; border-bottom: 1px solid var(--border); margin-bottom: 4px; }
   .ms-actions button {
     background: none; border: none; color: var(--accent); cursor: pointer;
@@ -109,6 +110,7 @@
     border-radius: 8px; cursor: pointer; font-size: 0.9rem;
   }
   .ms-opt:hover { background: var(--surface-2); }
+  .ms-opt[hidden] { display: none; }
   .ms-opt input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
   .ms-opt .name { flex: 1; }
   .ms-opt .count {
@@ -117,6 +119,7 @@
   }
   .ms-opt .count.has { color: var(--new); background: var(--new-soft); font-weight: 600; }
   .ms-opt.none .name { color: var(--muted); }
+  .ms-opt .count.pg { border: 1px dotted var(--border); }
   .ms-opt .count.na { background: transparent; border: 1px dashed var(--border); font-size: 0.7rem; }
 
   .notice {
@@ -196,19 +199,27 @@ async function load() {
     // nur die VCs, die aktuell Stellen haben.
     const known = new Map((data.vcs || []).map(v => [v.name, v]));
     for (const j of state.jobs) {
-      if (!known.has(j.vc)) known.set(j.vc, { name: j.vc, website: j.vc_website || "", scannable: true });
+      if (!known.has(j.vc)) known.set(j.vc, { name: j.vc, website: j.vc_website || "", mode: "feed" });
     }
     state.vcs = [...known.values()].sort((a, b) => a.name.localeCompare(b.name, "de"));
     document.getElementById("updated").textContent =
       "Zuletzt aktualisiert: " + (data.updated_at ? fmtDate(data.updated_at) : "—") +
       " · " + (data.count ?? state.jobs.length) + " offene Stellen · " +
-      state.vcs.filter(v => v.scannable !== false).length + " von " + state.vcs.length + " VCs automatisch überwacht";
+      state.vcs.length + " VCs überwacht (" +
+      state.vcs.filter(v => modeOf(v) === "feed").length + " per Feed, " +
+      state.vcs.filter(v => modeOf(v) === "page").length + " per Seitenprüfung)";
     buildVcOptions();
     render();
   } catch (e) {
     document.getElementById("list").innerHTML =
       '<div class="empty">Konnte Daten nicht laden. Läuft der Scanner schon?</div>';
   }
+}
+
+// Status je VC: feed = Bewerbersystem (zuverlaessig), page = Seitenpruefung (best effort), none = nicht scanbar
+function modeOf(v) {
+  if (v.mode) return v.mode;
+  return v.scannable === false ? "none" : "feed";   // aeltere Daten ohne "mode"
 }
 
 function jobCounts() {
@@ -220,23 +231,35 @@ function jobCounts() {
 function buildVcOptions() {
   const panel = document.getElementById("vcPanel");
   const counts = jobCounts();
+  const keep = document.getElementById("vcSearch");
+  const q = keep ? keep.value : "";
   panel.innerHTML =
+    '<input type="search" class="ms-search" id="vcSearch" placeholder="VC suchen…" aria-label="VC suchen" autocomplete="off" />' +
     '<div class="ms-actions">' +
-      '<button type="button" data-act="all">Alle auswählen</button>' +
+      '<button type="button" data-act="all">Alle sichtbaren wählen</button>' +
       '<button type="button" data-act="none">Zurücksetzen</button>' +
     '</div>' +
     state.vcs.map((v, i) => {
       const n = counts[v.name] || 0;
-      const na = v.scannable === false;
+      const mode = modeOf(v);
       return `<label class="ms-opt ${n ? "" : "none"}">
         <input type="checkbox" value="${escapeHtml(v.name)}" ${state.selected.has(v.name) ? "checked" : ""} />
         <span class="name">${escapeHtml(v.name)}</span>
-        ${na
+        ${mode === "none"
           ? '<span class="count na" title="Nicht automatisch scanbar – Karriereseite manuell prüfen">–</span>'
-          : `<span class="count ${n ? "has" : ""}" title="${n} offene Stelle(n)">${n}</span>`}
+          : `<span class="count ${n ? "has" : ""} ${mode === "page" ? "pg" : ""}" title="${n} offene Stelle(n)${mode === "page" ? " (Seitenprüfung, best effort)" : ""}">${n}${mode === "page" ? "~" : ""}</span>`}
       </label>`;
     }).join("");
+  document.getElementById("vcSearch").value = q;
+  filterVcOptions();
   updateVcLabel();
+}
+
+function filterVcOptions() {
+  const q = (document.getElementById("vcSearch").value || "").toLowerCase().trim();
+  document.querySelectorAll("#vcPanel .ms-opt").forEach(el => {
+    el.hidden = !!q && !el.textContent.toLowerCase().includes(q);
+  });
 }
 
 function updateVcLabel() {
@@ -247,6 +270,7 @@ function updateVcLabel() {
 
 function setPanel(open) {
   document.getElementById("vcPanel").hidden = !open;
+  if (open) { const s = document.getElementById("vcSearch"); if (s) s.focus(); }
   document.getElementById("vcBtn").setAttribute("aria-expanded", String(open));
 }
 
@@ -254,9 +278,12 @@ function emptyMessage(names) {
   const by = Object.fromEntries(state.vcs.map(v => [v.name, v]));
   return names.map(n => {
     const v = by[n] || {};
-    const msg = v.scannable === false
+    const mode = modeOf(v);
+    const msg = mode === "none"
       ? "Nicht automatisch scanbar – Karriereseite manuell prüfen."
-      : "Aktuell keine Stelle ausgeschrieben.";
+      : mode === "page"
+        ? "Keine passende Stelle auf der Karriereseite erkannt (automatische Seitenprüfung, ohne Gewähr)."
+        : "Aktuell keine Stelle ausgeschrieben.";
     return `
     <div class="vc-empty">
       <div class="name">${escapeHtml(n)}</div>
@@ -286,9 +313,10 @@ function render() {
   // Ausgewählte VCs, die überhaupt keine offene Stelle haben (unabhängig von Suche/Typ).
   const counts = jobCounts();
   const emptyVcs = [...sel].filter(n => !counts[n]).sort((a, b) => a.localeCompare(b, "de"));
-  const scannable = Object.fromEntries(state.vcs.map(v => [v.name, v.scannable !== false]));
-  const noneOpen = emptyVcs.filter(n => scannable[n]);       // Feed vorhanden, aber keine Stelle
-  const notScanned = emptyVcs.filter(n => !scannable[n]);    // kein auslesbarer Feed
+  const modes = Object.fromEntries(state.vcs.map(v => [v.name, modeOf(v)]));
+  const noneOpen = emptyVcs.filter(n => modes[n] === "feed");       // Feed vorhanden, aber keine Stelle
+  const noneFound = emptyVcs.filter(n => modes[n] === "page");      // Seitenprüfung ohne Treffer
+  const notScanned = emptyVcs.filter(n => modes[n] === "none");     // kein auslesbarer Feed
 
   if (!jobs.length) {
     if (emptyVcs.length && emptyVcs.length === sel.size) {
@@ -305,6 +333,9 @@ function render() {
   const notice =
     (noneOpen.length
       ? `<div class="notice">Aktuell keine Stelle ausgeschrieben bei: <strong>${noneOpen.map(escapeHtml).join(", ")}</strong></div>`
+      : "") +
+    (noneFound.length
+      ? `<div class="notice">Keine passende Stelle erkannt (Seitenprüfung, ohne Gewähr) bei: <strong>${noneFound.map(escapeHtml).join(", ")}</strong></div>`
       : "") +
     (notScanned.length
       ? `<div class="notice">Nicht automatisch scanbar (Karriereseite manuell prüfen): <strong>${notScanned.map(escapeHtml).join(", ")}</strong></div>`
@@ -337,6 +368,9 @@ function escapeHtml(s) {
 // Mehrfachauswahl-Dropdown
 document.getElementById("vcBtn").addEventListener("click", () =>
   setPanel(document.getElementById("vcPanel").hidden));
+document.getElementById("vcPanel").addEventListener("input", e => {
+  if (e.target.id === "vcSearch") filterVcOptions();
+});
 document.getElementById("vcPanel").addEventListener("change", e => {
   if (e.target.type !== "checkbox") return;
   e.target.checked ? state.selected.add(e.target.value) : state.selected.delete(e.target.value);
@@ -346,7 +380,12 @@ document.getElementById("vcPanel").addEventListener("change", e => {
 document.getElementById("vcPanel").addEventListener("click", e => {
   const act = e.target.dataset && e.target.dataset.act;
   if (!act) return;
-  state.selected = act === "all" ? new Set(state.vcs.map(v => v.name)) : new Set();
+  if (act === "all") {
+    // nur die aktuell sichtbaren (durch die Suche gefilterten) VCs auswählen
+    document.querySelectorAll("#vcPanel .ms-opt:not([hidden]) input").forEach(i => state.selected.add(i.value));
+  } else {
+    state.selected = new Set();
+  }
   buildVcOptions();
   render();
 });

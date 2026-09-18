@@ -19,6 +19,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -32,6 +33,7 @@ from vcs import VCS  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_FILE = ROOT / "data" / "jobs.json"
+EMPTY_RUNS_LIMIT = 3  # so viele leere Laeufe in Folge, bis Stellen eines VCs als entfernt gelten
 SEED_MODE = os.environ.get("SCANNER_SEED", "").strip() in ("1", "true", "yes")
 
 
@@ -52,14 +54,20 @@ def save_state(state: dict) -> None:
 
 
 def vc_overview() -> list[dict]:
-    """Alle VCs (einmal pro Name); scannable = mindestens ein auslesbarer Feed."""
+    """Alle VCs (einmal pro Name) mit Status:
+    feed = Bewerbersystem-Feed (zuverlaessig), page = generische Seitenpruefung (best effort),
+    none = nicht automatisch scanbar. scannable bleibt als bool erhalten (feed oder page)."""
     seen: dict[str, dict] = {}
     for vc in VCS:
         entry = seen.setdefault(
-            vc["name"], {"name": vc["name"], "website": vc.get("website", ""), "scannable": False}
+            vc["name"],
+            {"name": vc["name"], "website": vc.get("website", ""), "mode": "none", "scannable": False},
         )
-        if vc.get("ats"):
-            entry["scannable"] = True
+        if vc.get("ats") and vc["ats"] != "careerpage":
+            entry["mode"] = "feed"
+        elif vc.get("ats") == "careerpage" and entry["mode"] == "none":
+            entry["mode"] = "page"
+        entry["scannable"] = entry["mode"] != "none"
     return list(seen.values())
 
 
@@ -72,18 +80,27 @@ def scan() -> None:
     new_jobs: list[dict] = []
     errors: list[str] = []
 
+    empty_runs: dict[str, int] = dict(state.get("empty_runs", {}))
+    fetched: dict[str, int] = {}  # VC-Name -> Anzahl Stellen ueber alle seine Feeds
+
     for vc in VCS:
         name = vc["name"]
         if not vc.get("ats"):
             continue  # VC ohne auslesbaren Feed: nur im Dropdown, nicht gescannt
         try:
             raw_jobs = ats.fetch_jobs(vc["ats"], vc["slug"])
+            if not raw_jobs and any(j.get("vc") == name for j in known.values()):
+                # Bekannte Stellen, aber Feed leer: einmal wiederholen (Netzwerkfehler von
+                # "keine Stellen" nicht zu unterscheiden).
+                time.sleep(3)
+                raw_jobs = ats.fetch_jobs(vc["ats"], vc["slug"])
         except Exception as e:  # defensiv: ein VC darf den Lauf nicht killen
             errors.append(f"{name}: {e}")
+            fetched.setdefault(name, 0)
             continue
 
+        fetched[name] = fetched.get(name, 0) + len(raw_jobs)
         if not raw_jobs:
-            # Kein Ergebnis kann "aktuell keine Stellen" ODER ein kaputter Feed sein.
             print(f"[scan] {name}: 0 Stellen vom Feed")
             continue
 
@@ -106,6 +123,26 @@ def scan() -> None:
                 job["first_seen"] = known[job["id"]].get("first_seen", now)
         print(f"[scan] {name}: {len(raw_jobs)} Stellen, {matched} passend")
 
+    # Ein leerer Feed kann ein Netzwerk-/Feed-Fehler sein. Dann die zuletzt bekannten Stellen
+    # dieses VCs behalten (sonst verschwinden sie und tauchen spaeter als "neu" wieder auf ->
+    # doppelte Telegram-Nachrichten). Nach EMPTY_RUNS_LIMIT leeren Laeufen in Folge gilt die
+    # Stelle als wirklich entfernt.
+    for name, count in fetched.items():
+        if count > 0:
+            empty_runs.pop(name, None)
+            continue
+        previous = [j for j in known.values() if j.get("vc") == name]
+        if not previous:
+            continue
+        empty_runs[name] = empty_runs.get(name, 0) + 1
+        if empty_runs[name] < EMPTY_RUNS_LIMIT:
+            print(f"[scan] {name}: Feed leer ({empty_runs[name]}/{EMPTY_RUNS_LIMIT}), behalte letzten Stand")
+            for j in previous:
+                current.setdefault(j["id"], j)
+        else:
+            print(f"[scan] {name}: Feed {EMPTY_RUNS_LIMIT}x leer, Stellen gelten als entfernt")
+            empty_runs.pop(name, None)
+
     # Merge: aktuell offene passende Stellen sind der neue Zustand.
     merged = list(current.values())
     merged.sort(key=lambda j: j.get("first_seen", ""), reverse=True)
@@ -117,6 +154,7 @@ def scan() -> None:
         "vcs": vc_overview(),
         "jobs": merged,
         "errors": errors,
+        "empty_runs": empty_runs,
     }
     save_state(state)
 

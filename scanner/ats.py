@@ -19,9 +19,11 @@ damit ein defekter Feed den gesamten Scan nicht abbricht.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from html import unescape as html_unescape
+from html.parser import HTMLParser
 import xml.etree.ElementTree as ET
 from typing import Callable
 
@@ -396,6 +398,115 @@ def breezy(slug: str) -> list[dict]:
     return jobs
 
 
+# --------------------------------------------------------------------------- #
+# Karriereseite (generisch) -> beliebige statische HTML-Karriereseite eines VCs
+#   slug = URL der Karriereseite. Best effort: Es werden Links gesucht, die wie eine
+#   Stellenanzeige aussehen (Titel mit Einstiegs-Stichwort UND Stellen-Merkmal wie
+#   "(m/w/d)" oder ein Job-Pfad). Ort: erste deutsche Stadt im Link-Text bzw. auf der Seite.
+# --------------------------------------------------------------------------- #
+_ENTRY = re.compile(
+    r"(?<![a-zäöüß])(praktik\w*|intern(?:ship)?s?|werkstudent\w*|working student|analyst\w*|"
+    r"associate|trainee|junior|absolvent\w*|graduate|fellow\w*|visiting)(?![a-zäöüß])",
+    re.I,
+)
+_GENDER = re.compile(r"\((?:\s*[mwfdxgn]\s*[/|*:]\s*){1,3}[mwfdxgn]\s*\)|all genders|\(gn\)|\(m/w/\*\)", re.I)
+_JOBPATH = re.compile(r"/(jobs?|stelle[n]?|position[s]?|opening[s]?|vacanc\w*|karriere|careers?|apply|bewerb\w*)(/|$|\?|-)", re.I)
+_STOP_TITLES = {"analyst", "analysts", "analysten", "praktikum", "internship", "internships", "intern",
+                "interns", "associate", "associates", "graduate", "junior", "trainee"}
+_CITIES = ["berlin", "münchen", "munich", "hamburg", "frankfurt", "köln", "cologne", "düsseldorf",
+           "stuttgart", "bonn", "leipzig", "hannover", "karlsruhe", "heidelberg", "mannheim", "nürnberg",
+           "dresden", "potsdam", "heilbronn"]
+
+
+class _AnchorParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.anchors: list[tuple[str, str]] = []
+        self.text: list[str] = []
+        self._cur: list[str] | None = None
+        self._skip = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style", "noscript"):
+            self._skip += 1
+        if tag == "a":
+            self._cur = [dict(attrs).get("href") or "", ""]
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style", "noscript"):
+            self._skip = max(0, self._skip - 1)
+        if tag == "a" and self._cur is not None:
+            self.anchors.append((self._cur[0], self._cur[1]))
+            self._cur = None
+
+    def handle_data(self, data):
+        if self._skip:
+            return
+        self.text.append(data)
+        if self._cur is not None:
+            self._cur[1] += data
+
+
+def _clean_title(t: str) -> str:
+    t = " ".join(html_unescape(t).split())
+    t = re.sub(r"^\d{1,2}\s*/\s*\d{1,2}\s*/\s*\d{2,4}\s*", "", t)          # Datum am Anfang
+    t = re.sub(r"^(job opening|open position|stellenanzeige|new)\s*[:\-–]?\s*", "", t, flags=re.I)
+    return t.strip(" -–|")
+
+
+def careerpage(slug: str) -> list[dict]:
+    """slug = "<URL>" oder "<URL>|<Ort>". Der Ort dient als Fallback, wenn Titel/Seite keine
+    deutsche Stadt nennen (fuer VCs, die bekanntermassen in Deutschland sitzen)."""
+    from urllib.parse import urljoin, urlparse
+
+    slug, _, default_loc = slug.partition("|")
+    resp = None
+    for _ in range(2):
+        try:
+            resp = _get(slug)
+            break
+        except requests.RequestException:
+            continue
+    if resp is None or "html" not in resp.headers.get("content-type", "html").lower():
+        return []
+    parser = _AnchorParser()
+    try:
+        parser.feed(resp.text)
+    except Exception:
+        return []
+    page_text = " ".join(" ".join(parser.text).split()).lower()
+    page_city = next((c for c in _CITIES if re.search(rf"(?<![a-zäöü]){c}(?![a-zäöü])", page_text)), "")
+    page_path = urlparse(resp.url).path.rstrip("/")
+    page_city = page_city.title() if page_city else default_loc
+
+    jobs: dict[str, dict] = {}
+    for href, raw in parser.anchors:
+        title = _clean_title(raw)
+        if not (8 <= len(title) <= 140) or not _ENTRY.search(title):
+            continue
+        if title.lower() in _STOP_TITLES or len(title.split()) < 2:
+            continue
+        if re.match(r"^(studenten|schüler|absolventen|students)\b", title, re.I):
+            continue  # Kategorie-Links wie "Studenten & Absolventen", keine Stellen
+        target = urljoin(resp.url, href)
+        path = urlparse(target).path.rstrip("/")
+        jobby = bool(_GENDER.search(title)) or (
+            bool(_JOBPATH.search(path)) and path != page_path and len(path) > len(page_path)
+        )
+        if not jobby or href.startswith(("mailto:", "tel:", "#", "javascript:")):
+            continue
+        city = next((c.title() for c in _CITIES if c in title.lower()), page_city)
+        job_id = "careerpage:" + hashlib.md5(f"{target}|{title}".encode()).hexdigest()[:12]
+        jobs[job_id] = {
+            "id": job_id,
+            "title": title,
+            "location": city,
+            "url": target,
+            "department": "",
+        }
+    return list(jobs.values())
+
+
 # Registry: ATS-Name -> Adapter-Funktion
 ADAPTERS: dict[str, Callable[[str], list[dict]]] = {
     "personio": personio,
@@ -409,6 +520,7 @@ ADAPTERS: dict[str, Callable[[str], list[dict]]] = {
     "smartrecruiters": smartrecruiters,
     "trakstar": trakstar,
     "breezy": breezy,
+    "careerpage": careerpage,
 }
 
 
