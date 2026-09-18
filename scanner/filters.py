@@ -31,11 +31,11 @@ REMOTE_TERMS = ["remote", "hybrid"]
 # Positive Signale im Titel.
 ENTRY_TERMS = [
     # Praktikum
-    "praktikum", "praktikant", "praktikantin", "intern", "internship", "interns",
+    "praktikum", "praktikant", "praktikantin", "praktikanten", "intern", "internship", "interns",
     # Werkstudent
-    "werkstudent", "working student", "student assistant",
+    "werkstudent", "werkstudentin", "werkstudenten", "working student", "student assistant",
     # Absolvent / Einstieg
-    "absolvent", "graduate", "new grad", "entry level", "entry-level",
+    "absolvent", "absolventen", "absolventin", "graduate", "new grad", "entry level", "entry-level",
     "berufseinsteiger", "trainee", "junior", "einsteiger", "einstieg",
     # VC-typische Einstiegsrollen
     "analyst", "investment analyst", "associate intern", "fellow", "fellowship",
@@ -56,7 +56,8 @@ def _norm(s: str) -> str:
 
 
 def _contains_any(text: str, terms: list[str]) -> bool:
-    return any(t in text for t in terms)
+    """Ganzwort-Treffer: "intern" trifft nicht "international", "essen" nicht "essential"."""
+    return any(re.search(rf"(?<![a-zäöüß]){re.escape(t.strip())}(?![a-zäöüß])", text) for t in terms)
 
 
 def is_germany(job: dict) -> bool:
@@ -78,7 +79,7 @@ def is_entry_level(job: dict) -> bool:
     if _contains_any(f" {title} ", SENIOR_TERMS):
         # Ausnahme: "Junior ... Senior..." kommt praktisch nicht vor; wenn doch
         # ein Praktikum/Intern explizit drinsteht, trotzdem behalten.
-        if not _contains_any(title, ["praktik", "intern", "werkstudent", "working student"]):
+        if not _contains_any(title, ["praktikum", "praktikant", "intern", "internship", "werkstudent", "working student"]):
             return False
     return _contains_any(title, ENTRY_TERMS)
 

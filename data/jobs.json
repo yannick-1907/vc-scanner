@@ -1,6 +1,37 @@
 {
-  "updated_at": "2026-09-18T17:58:31.969891+00:00",
-  "count": 0,
-  "jobs": [],
+  "updated_at": "2026-09-18T20:48:23.574902+00:00",
+  "count": 3,
+  "jobs": [
+    {
+      "id": "personio:earlybirdvc-gmbh:2715164",
+      "title": "Investment Intern (m/f/d)",
+      "location": "Munich",
+      "url": "https://earlybirdvc-gmbh.jobs.personio.de/job/2715164",
+      "department": "Investment Intern",
+      "vc": "Earlybird",
+      "vc_website": "https://earlybird.com/",
+      "first_seen": "2026-09-18T20:48:23.574902+00:00"
+    },
+    {
+      "id": "ashby:hv:2ed3faab-b1a3-4430-a45a-3f3b25df546b",
+      "title": "Investment Intern – Early Stage",
+      "location": "Berlin",
+      "url": "https://jobs.ashbyhq.com/hv/2ed3faab-b1a3-4430-a45a-3f3b25df546b",
+      "department": "Investment",
+      "vc": "HV Capital",
+      "vc_website": "https://hvcapital.com/",
+      "first_seen": "2026-09-18T20:48:23.574902+00:00"
+    },
+    {
+      "id": "ashby:hv:3759ca29-f782-4138-b7f0-a5532699596d",
+      "title": "Investment Intern - Growth Stage",
+      "location": "Berlin",
+      "url": "https://jobs.ashbyhq.com/hv/3759ca29-f782-4138-b7f0-a5532699596d",
+      "department": "Growth",
+      "vc": "HV Capital",
+      "vc_website": "https://hvcapital.com/",
+      "first_seen": "2026-09-18T20:48:23.574902+00:00"
+    }
+  ],
   "errors": []
 }

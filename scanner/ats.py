@@ -19,6 +19,8 @@ damit ein defekter Feed den gesamten Scan nicht abbricht.
 
 from __future__ import annotations
 
+import json
+import re
 import xml.etree.ElementTree as ET
 from typing import Callable
 
@@ -203,6 +205,99 @@ def workable(slug: str) -> list[dict]:
     return jobs
 
 
+# --------------------------------------------------------------------------- #
+# JOIN -> https://join.com/api/public/companies/{company_id}/jobs
+#   slug = Firmenname aus der URL, z.B. "project-a" (join.com/companies/project-a)
+# --------------------------------------------------------------------------- #
+def join(slug: str) -> list[dict]:
+    try:
+        html = _get(f"https://join.com/companies/{slug}").text
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
+        company_id = json.loads(m.group(1))["props"]["pageProps"]["initialState"]["company"]["id"]
+    except (requests.RequestException, ValueError, KeyError, AttributeError):
+        return []
+
+    jobs: list[dict] = []
+    page = 1
+    while page <= 20:  # Sicherheitslimit
+        url = (
+            f"https://join.com/api/public/companies/{company_id}/jobs"
+            f"?locale=de-de&page={page}&pageSize=5"
+        )
+        try:
+            data = _get(url).json()
+        except (requests.RequestException, ValueError):
+            break
+        for j in data.get("items", []):
+            city = j.get("city") or {}
+            country = j.get("country") or {}
+            city_name = city.get("cityName", "") if isinstance(city, dict) else str(city)
+            country_name = country.get("name", "") if isinstance(country, dict) else str(country)
+            id_param = j.get("idParam") or j.get("id")
+            jobs.append(
+                {
+                    "id": f"join:{slug}:{j.get('id')}",
+                    "title": (j.get("title") or "").strip(),
+                    "location": ", ".join(filter(None, [city_name, country_name])),
+                    "url": f"https://join.com/companies/{slug}/{id_param}",
+                    "department": (j.get("category") or {}).get("name", "")
+                    if isinstance(j.get("category"), dict)
+                    else "",
+                }
+            )
+        if page >= (data.get("pagination") or {}).get("pageCount", 0):
+            break
+        page += 1
+    return jobs
+
+
+# --------------------------------------------------------------------------- #
+# Getro (Job-Boards von VCs, z.B. jobs.earlybird.com)
+#   slug = "<board-host>/<company-slug>", z.B. "jobs.earlybird.com/earlybird-venture-capital"
+#   Das Board enthaelt auch Portfolio-Stellen -> wir filtern ueber organization.id
+#   auf die Stellen des VCs selbst.
+# --------------------------------------------------------------------------- #
+def getro(slug: str) -> list[dict]:
+    host, _, company_slug = slug.partition("/")
+    try:
+        html = _get(f"https://{host}/companies/{company_slug}").text
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
+        props = json.loads(m.group(1))["props"]["pageProps"]
+        collection_id = props["network"]["id"]
+        org_id = props["company"]["id"]
+    except (requests.RequestException, ValueError, KeyError, AttributeError):
+        return []
+
+    api = f"https://api.getro.com/api/v2/collections/{collection_id}/search/jobs"
+    jobs: list[dict] = []
+    for page in range(20):  # Sicherheitslimit
+        body = {"hitsPerPage": 20, "page": page, "query": "", "filters": {"organization.id": [org_id]}}
+        try:
+            resp = requests.post(
+                api, json=body, headers={**HEADERS, "Accept": "application/json"}, timeout=TIMEOUT
+            )
+            resp.raise_for_status()
+            hits = resp.json()["results"]["jobs"]
+        except (requests.RequestException, ValueError, KeyError):
+            break
+        for j in hits:
+            # Sicherheitsnetz: nur Stellen der VC-Organisation selbst
+            if (j.get("organization") or {}).get("id") not in (None, org_id):
+                continue
+            jobs.append(
+                {
+                    "id": f"getro:{host}:{j.get('id') or j.get('url')}",
+                    "title": (j.get("title") or "").strip(),
+                    "location": ", ".join(j.get("searchable_locations") or []),
+                    "url": j.get("url", ""),
+                    "department": "",
+                }
+            )
+        if len(hits) < 20:
+            break
+    return jobs
+
+
 # Registry: ATS-Name -> Adapter-Funktion
 ADAPTERS: dict[str, Callable[[str], list[dict]]] = {
     "personio": personio,
@@ -211,6 +306,8 @@ ADAPTERS: dict[str, Callable[[str], list[dict]]] = {
     "ashby": ashby,
     "recruitee": recruitee,
     "workable": workable,
+    "join": join,
+    "getro": getro,
 }
 
 
