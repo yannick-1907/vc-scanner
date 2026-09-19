@@ -45,12 +45,6 @@
       "scannable": true
     },
     {
-      "name": "Alven",
-      "website": "https://www.welcometothejungle.com/fr/companies/mytraffic/jobs/software-engineer-m-f_madrid",
-      "mode": "page",
-      "scannable": true
-    },
-    {
       "name": "Amino Capital",
       "website": "https://www.aminocapital.com/careers",
       "mode": "page",
@@ -87,12 +81,6 @@
       "scannable": true
     },
     {
-      "name": "Axel Springer Digital Ventures",
-      "website": "https://career.axelspringer.com/de/",
-      "mode": "page",
-      "scannable": true
-    },
-    {
       "name": "Backed VC",
       "website": "https://talent.backed.vc/jobs",
       "mode": "feed",
@@ -111,12 +99,6 @@
       "scannable": true
     },
     {
-      "name": "BASF Venture Capital",
-      "website": "https://www.basf.com/global/en/careers/life-at-basf",
-      "mode": "page",
-      "scannable": true
-    },
-    {
       "name": "Battery Ventures",
       "website": "https://battery.com",
       "mode": "feed",
@@ -129,18 +111,6 @@
       "scannable": true
     },
     {
-      "name": "BayWa Venture",
-      "website": "https://www.baywa.com/jobs-karriere/auf-einen-blick",
-      "mode": "page",
-      "scannable": true
-    },
-    {
-      "name": "Bertelsmann Investments",
-      "website": "https://jobsearch.createyourowncareer.com/errorpage/?errortype=Exception",
-      "mode": "page",
-      "scannable": true
-    },
-    {
       "name": "BITKRAFT Ventures",
       "website": "https://bitkraft.vc/careers",
       "mode": "feed",
@@ -149,12 +119,6 @@
     {
       "name": "BitStone Capital",
       "website": "https://www.bitstone.capital/karriere/",
-      "mode": "page",
-      "scannable": true
-    },
-    {
-      "name": "Blackfin Capital Partners",
-      "website": "http://blackfin.com/contact/?tab=2",
       "mode": "page",
       "scannable": true
     },
@@ -306,12 +270,6 @@
       "name": "Energy Impact Partners",
       "website": "https://www.energyimpactpartners.com/careers",
       "mode": "feed",
-      "scannable": true
-    },
-    {
-      "name": "Entrée Capital",
-      "website": "https://entreecap.com/jobs/hiring-office-manager-and-operations",
-      "mode": "page",
       "scannable": true
     },
     {
@@ -653,12 +611,6 @@
     {
       "name": "MS&AD Ventures",
       "website": "https://msad.vc/portfolio/join-digital",
-      "mode": "page",
-      "scannable": true
-    },
-    {
-      "name": "Munich Re Ventures",
-      "website": "https://careers.munichre.com/en/job/birmingham/underwriter-cargo-and-freight/3342/44886268864",
       "mode": "page",
       "scannable": true
     },

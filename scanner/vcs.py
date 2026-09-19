@@ -89,12 +89,6 @@ VCS: list[dict] = [
         "slug": "alstin",
     },
     {
-        "name": "Alven",
-        "website": "https://www.welcometothejungle.com/fr/companies/mytraffic/jobs/software-engineer-m-f_madrid",
-        "ats": "careerpage",
-        "slug": "https://www.welcometothejungle.com/fr/companies/mytraffic/jobs/software-engineer-m-f_madrid",
-    },
-    {
         "name": "Amino Capital",
         "website": "https://www.aminocapital.com/careers",
         "ats": "careerpage",
@@ -131,12 +125,6 @@ VCS: list[dict] = [
         "slug": "avalacapital",
     },
     {
-        "name": "Axel Springer Digital Ventures",
-        "website": "https://career.axelspringer.com/de/",
-        "ats": "careerpage",
-        "slug": "https://career.axelspringer.com/de/|Deutschland",
-    },
-    {
         "name": "Backed VC",
         "website": "https://talent.backed.vc/jobs",
         "ats": "getro",
@@ -155,12 +143,6 @@ VCS: list[dict] = [
         "slug": "https://careers.balderton.com/jobs",
     },
     {
-        "name": "BASF Venture Capital",
-        "website": "https://www.basf.com/global/en/careers/life-at-basf",
-        "ats": "careerpage",
-        "slug": "https://www.basf.com/global/en/careers/life-at-basf",
-    },
-    {
         "name": "Battery Ventures",
         "website": "https://battery.com",
         "ats": "join",
@@ -173,18 +155,6 @@ VCS: list[dict] = [
         "slug": "https://bayernkapital.de/bayern-kapital/karriere/|Deutschland",
     },
     {
-        "name": "BayWa Venture",
-        "website": "https://www.baywa.com/jobs-karriere/auf-einen-blick",
-        "ats": "careerpage",
-        "slug": "https://www.baywa.com/jobs-karriere/auf-einen-blick|Deutschland",
-    },
-    {
-        "name": "Bertelsmann Investments",
-        "website": "https://jobsearch.createyourowncareer.com/errorpage/?errortype=Exception",
-        "ats": "careerpage",
-        "slug": "https://jobsearch.createyourowncareer.com/errorpage/?errortype=Exception",
-    },
-    {
         "name": "BITKRAFT Ventures",
         "website": "https://bitkraft.vc/careers",
         "ats": "greenhouse",
@@ -195,12 +165,6 @@ VCS: list[dict] = [
         "website": "https://www.bitstone.capital/karriere/",
         "ats": "careerpage",
         "slug": "https://www.bitstone.capital/karriere/",
-    },
-    {
-        "name": "Blackfin Capital Partners",
-        "website": "http://blackfin.com/contact/?tab=2",
-        "ats": "careerpage",
-        "slug": "http://blackfin.com/contact/?tab=2|Deutschland",
     },
     {
         "name": "Blossom Capital",
@@ -357,12 +321,6 @@ VCS: list[dict] = [
         "website": "https://www.energyimpactpartners.com/careers",
         "ats": "join",
         "slug": "energyimpactpartners",
-    },
-    {
-        "name": "Entrée Capital",
-        "website": "https://entreecap.com/jobs/hiring-office-manager-and-operations",
-        "ats": "careerpage",
-        "slug": "https://entreecap.com/jobs/hiring-office-manager-and-operations|Deutschland",
     },
     {
         "name": "EQT Ventures",
@@ -705,12 +663,6 @@ VCS: list[dict] = [
         "website": "https://msad.vc/portfolio/join-digital",
         "ats": "careerpage",
         "slug": "https://msad.vc/portfolio/join-digital|Deutschland",
-    },
-    {
-        "name": "Munich Re Ventures",
-        "website": "https://careers.munichre.com/en/job/birmingham/underwriter-cargo-and-freight/3342/44886268864",
-        "ats": "careerpage",
-        "slug": "https://careers.munichre.com/en/job/birmingham/underwriter-cargo-and-freight/3342/44886268864|Deutschland",
     },
     {
         "name": "Nauta Capital",

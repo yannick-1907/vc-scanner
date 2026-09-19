@@ -194,4 +194,12 @@ NOT_SCANNABLE: list[dict] = [
     {"name": "Yabeo Capital", "website": "https://ceracare.co.uk/"},
     {"name": "Revent", "website": "https://careers.revent.vc/jobs"},  # Jobboard laedt per JavaScript
     {"name": "10x Founders", "website": "https://10xfounders.jobs.personio.com/"},  # Personio-XML-Feed deaktiviert
+    {"name": "Axel Springer Digital Ventures", "website": "https://career.axelspringer.com/de/"},  # Karriereseite gehoert nicht zum VC selbst
+    {"name": "Bertelsmann Investments", "website": "https://jobsearch.createyourowncareer.com/errorpage/?errortype=Exception"},  # Karriereseite gehoert nicht zum VC selbst
+    {"name": "Blackfin Capital Partners", "website": "http://blackfin.com/contact/?tab=2"},  # Karriereseite gehoert nicht zum VC selbst
+    {"name": "Munich Re Ventures", "website": "https://careers.munichre.com/en/job/birmingham/underwriter-cargo-and-freight/3342/44886268864"},  # Karriereseite gehoert nicht zum VC selbst
+    {"name": "Alven", "website": "https://www.welcometothejungle.com/fr/companies/mytraffic/jobs/software-engineer-m-f_madrid"},  # Karriereseite gehoert nicht zum VC selbst
+    {"name": "Entrée Capital", "website": "https://entreecap.com/jobs/hiring-office-manager-and-operations"},  # Karriereseite gehoert nicht zum VC selbst
+    {"name": "BASF Venture Capital", "website": "https://www.basf.com/global/en/careers/life-at-basf"},  # Karriereseite gehoert nicht zum VC selbst
+    {"name": "BayWa Venture", "website": "https://www.baywa.com/jobs-karriere/auf-einen-blick"},  # Karriereseite gehoert nicht zum VC selbst
 ]
