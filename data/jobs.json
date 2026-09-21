@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T12:12:09.938098+00:00",
+  "updated_at": "2026-09-21T15:09:16.584404+00:00",
   "count": 39,
   "vcs": [
     {
@@ -911,6 +911,16 @@
   ],
   "jobs": [
     {
+      "id": "recruitee:pointnine:2725720",
+      "title": "Junior Fund Operations Associate  (f/m/d)",
+      "location": "Berlin, Berlin, Germany",
+      "url": "https://pointnine.recruitee.com/o/junior-fund-operations-associate-fmd",
+      "department": "Operations/ Legal",
+      "vc": "Point Nine",
+      "vc_website": "https://www.pointnine.com",
+      "first_seen": "2026-09-21T15:09:16.584404+00:00"
+    },
+    {
       "id": "careerpage:9525f716bcfe",
       "title": "Visiting Analyst - Science (f/m/d)",
       "location": "Zurich/Berlin",
@@ -1018,16 +1028,6 @@
       "department": "",
       "vc": "Capmont Technology",
       "vc_website": "https://careers.cmont.com/companies/capmont-technology#content",
-      "first_seen": "2026-09-18T22:40:31.782284+00:00"
-    },
-    {
-      "id": "careerpage:e121c26dede0",
-      "title": "Automation Intern (f/m/d)",
-      "location": "Köln",
-      "url": "https://capnamic.com/post/automation-intern-f-m-d",
-      "department": "",
-      "vc": "capnamic Ventures",
-      "vc_website": "https://capnamic.com/jobs",
       "first_seen": "2026-09-18T22:40:31.782284+00:00"
     },
     {
@@ -1302,5 +1302,7 @@
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "Alstin Capital": 1
+  }
 }
