@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-21T18:11:30.257969+00:00",
-  "count": 39,
+  "updated_at": "2026-09-21T21:09:28.132697+00:00",
+  "count": 38,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1241,16 +1241,6 @@
       "first_seen": "2026-09-18T22:20:58.473604+00:00"
     },
     {
-      "id": "join:alstin:14642210",
-      "title": "Visiting VC Analyst - Intern Venture Capital (m/f/d)",
-      "location": "München, Deutschland",
-      "url": "https://join.com/companies/alstin/16729040-visiting-vc-analyst-intern-venture-capital-m-f-d",
-      "department": "Finanzen",
-      "vc": "Alstin Capital",
-      "vc_website": "https://alstin.capital/careers",
-      "first_seen": "2026-09-18T21:53:37.655492+00:00"
-    },
-    {
       "id": "join:b2venture:16441310",
       "title": "Product Associate, Fund Finance @ b2venture (m/f/d)",
       "location": "Berlin, Deutschland",
@@ -1302,7 +1292,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "Alstin Capital": 2
-  }
+  "empty_runs": {}
 }
