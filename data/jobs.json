@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-23T12:12:59.751562+00:00",
-  "count": 38,
+  "updated_at": "2026-09-23T18:12:46.821708+00:00",
+  "count": 39,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,6 +911,16 @@
   ],
   "jobs": [
     {
+      "id": "greenhouse:generalatlantic:6205669004",
+      "title": "Analyst, Munich",
+      "location": "Munich",
+      "url": "https://job-boards.greenhouse.io/generalatlantic/jobs/6205669004",
+      "department": "",
+      "vc": "General Atlantic",
+      "vc_website": "https://www.generalatlantic.com/careers",
+      "first_seen": "2026-09-23T18:12:46.821708+00:00"
+    },
+    {
       "id": "getro:jobs.firstmomentum.vc:94285432",
       "title": "Visiting Associate (Munich or Remote) - 6-12 months from October 2026",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
@@ -1244,7 +1254,7 @@
       "id": "join:b2venture:16441310",
       "title": "Product Associate, Fund Finance @ b2venture (m/f/d)",
       "location": "Berlin, Deutschland",
-      "url": "https://join.com/companies/b2venture/16688751-product-associate-fund-finance-b2venture-m-f-d",
+      "url": "https://join.com/companies/b2venture/16743192-product-associate-fund-finance-b2venture-m-f-d",
       "department": "Finanzen",
       "vc": "btov / b2venture",
       "vc_website": "https://www.b2venture.vc",
