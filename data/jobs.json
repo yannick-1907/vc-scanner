@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T06:12:50.728161+00:00",
+  "updated_at": "2026-09-23T09:10:06.231891+00:00",
   "count": 38,
   "vcs": [
     {
@@ -1031,16 +1031,6 @@
       "first_seen": "2026-09-18T22:40:31.782284+00:00"
     },
     {
-      "id": "getro:careers.cmont.com:50378535",
-      "title": "Visiting Analyst - Venture Capital",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://careers.cmont.com/companies/capmont-technology/jobs/50378535-visiting-analyst-venture-capital",
-      "department": "",
-      "vc": "Capmont Technology",
-      "vc_website": "https://careers.cmont.com/companies/capmont-technology#content",
-      "first_seen": "2026-09-18T22:40:31.782284+00:00"
-    },
-    {
       "id": "careerpage:188226389bdc",
       "title": "Investment Analyst (f/m/d)",
       "location": "Köln",
@@ -1048,6 +1038,16 @@
       "department": "",
       "vc": "capnamic Ventures",
       "vc_website": "https://capnamic.com/jobs",
+      "first_seen": "2026-09-18T22:40:31.782284+00:00"
+    },
+    {
+      "id": "getro:careers.cmont.com:50378535",
+      "title": "Visiting Analyst - Venture Capital",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://careers.cmont.com/companies/capmont-technology/jobs/50378535-visiting-analyst-venture-capital",
+      "department": "",
+      "vc": "Capmont Technology",
+      "vc_website": "https://careers.cmont.com/companies/capmont-technology#content",
       "first_seen": "2026-09-18T22:40:31.782284+00:00"
     },
     {
@@ -1292,5 +1292,9 @@
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "Capmont Technology": 1,
+    "First Momentum": 1,
+    "Merantix Capital": 1
+  }
 }
