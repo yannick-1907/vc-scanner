@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-24T06:13:08.526154+00:00",
-  "count": 39,
+  "updated_at": "2026-09-24T09:10:19.956292+00:00",
+  "count": 45,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,6 +910,66 @@
     }
   ],
   "jobs": [
+    {
+      "id": "getro:talent.uvcpartners.com:94505103",
+      "title": "Junior Venture Scout Working Student (m/f/x)",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/94505103-junior-venture-scout-working-student-m-f-x",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
+      "first_seen": "2026-09-24T09:10:19.956292+00:00"
+    },
+    {
+      "id": "careerpage:7942a303ced9",
+      "title": "Business Development Associate",
+      "location": "Munich",
+      "url": "https://www.ycombinator.com/companies/deepaware-ai-robotics-center-of-silicon-valley/jobs/Oz49Id3-business-development-associate",
+      "department": "",
+      "vc": "Y Combinator",
+      "vc_website": "https://www.ycombinator.com/jobs",
+      "first_seen": "2026-09-24T09:10:19.956292+00:00"
+    },
+    {
+      "id": "careerpage:4780e0d70f05",
+      "title": "Founding SDR Internship - German speaking",
+      "location": "Munich",
+      "url": "https://www.ycombinator.com/companies/rever/jobs/pzQ6oqJ-founding-sdr-internship-german-speaking",
+      "department": "",
+      "vc": "Y Combinator",
+      "vc_website": "https://www.ycombinator.com/jobs",
+      "first_seen": "2026-09-24T09:10:19.956292+00:00"
+    },
+    {
+      "id": "careerpage:981afe55e7d7",
+      "title": "GTM intern",
+      "location": "Munich",
+      "url": "https://www.ycombinator.com/companies/nao-labs/jobs/Cgv7KB0-gtm-intern",
+      "department": "",
+      "vc": "Y Combinator",
+      "vc_website": "https://www.ycombinator.com/jobs",
+      "first_seen": "2026-09-24T09:10:19.956292+00:00"
+    },
+    {
+      "id": "careerpage:b554d0b6142f",
+      "title": "Technical GTM / Founders Office Intern",
+      "location": "Munich",
+      "url": "https://www.ycombinator.com/companies/alder/jobs/rPtK6G4-technical-gtm-founders-office-intern",
+      "department": "",
+      "vc": "Y Combinator",
+      "vc_website": "https://www.ycombinator.com/jobs",
+      "first_seen": "2026-09-24T09:10:19.956292+00:00"
+    },
+    {
+      "id": "careerpage:cff9240ca4f3",
+      "title": "Go-To-Market associate",
+      "location": "Munich",
+      "url": "https://www.ycombinator.com/companies/diligent/jobs/b4JjjoO-go-to-market-associate",
+      "department": "",
+      "vc": "Y Combinator",
+      "vc_website": "https://www.ycombinator.com/jobs",
+      "first_seen": "2026-09-24T09:10:19.956292+00:00"
+    },
     {
       "id": "greenhouse:generalatlantic:6205669004",
       "title": "Analyst, Munich",
