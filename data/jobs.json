@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-24T12:12:35.734739+00:00",
-  "count": 40,
+  "updated_at": "2026-09-24T15:10:44.743477+00:00",
+  "count": 41,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,6 +910,16 @@
     }
   ],
   "jobs": [
+    {
+      "id": "join:aenu:16746239",
+      "title": "Visiting Investment Analyst (Jan 2027)",
+      "location": "Berlin, Deutschland",
+      "url": "https://join.com/companies/aenu/16746239-visiting-investment-analyst-jan-2027",
+      "department": "Mergers & Acquisitions",
+      "vc": "AENU",
+      "vc_website": "https://www.aenu.com/careers",
+      "first_seen": "2026-09-24T15:10:44.743477+00:00"
+    },
     {
       "id": "getro:talent.uvcpartners.com:94505103",
       "title": "Junior Venture Scout Working Student (m/f/x)",
