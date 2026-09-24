@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-24T09:10:19.956292+00:00",
-  "count": 45,
+  "updated_at": "2026-09-24T12:12:35.734739+00:00",
+  "count": 40,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -921,56 +921,6 @@
       "first_seen": "2026-09-24T09:10:19.956292+00:00"
     },
     {
-      "id": "careerpage:7942a303ced9",
-      "title": "Business Development Associate",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/deepaware-ai-robotics-center-of-silicon-valley/jobs/Oz49Id3-business-development-associate",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-09-24T09:10:19.956292+00:00"
-    },
-    {
-      "id": "careerpage:4780e0d70f05",
-      "title": "Founding SDR Internship - German speaking",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/rever/jobs/pzQ6oqJ-founding-sdr-internship-german-speaking",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-09-24T09:10:19.956292+00:00"
-    },
-    {
-      "id": "careerpage:981afe55e7d7",
-      "title": "GTM intern",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/nao-labs/jobs/Cgv7KB0-gtm-intern",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-09-24T09:10:19.956292+00:00"
-    },
-    {
-      "id": "careerpage:b554d0b6142f",
-      "title": "Technical GTM / Founders Office Intern",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/alder/jobs/rPtK6G4-technical-gtm-founders-office-intern",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-09-24T09:10:19.956292+00:00"
-    },
-    {
-      "id": "careerpage:cff9240ca4f3",
-      "title": "Go-To-Market associate",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/diligent/jobs/b4JjjoO-go-to-market-associate",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-09-24T09:10:19.956292+00:00"
-    },
-    {
       "id": "greenhouse:generalatlantic:6205669004",
       "title": "Analyst, Munich",
       "location": "Munich",
@@ -1304,7 +1254,7 @@
       "id": "join:realyzeventures:11974564",
       "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
       "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/realyzeventures/16687823-praktikant-in-m-w-d-venture-capital-in-koeln",
+      "url": "https://join.com/companies/realyzeventures/16745397-praktikant-in-m-w-d-venture-capital-in-koeln",
       "department": "Anlageberatung, Vermögensberatung",
       "vc": "Realyze Ventures",
       "vc_website": "https://realyzeventures.com/jobs",
