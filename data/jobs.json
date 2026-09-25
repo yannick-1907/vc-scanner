@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T09:09:59.881620+00:00",
+  "updated_at": "2026-09-25T12:12:50.838119+00:00",
   "count": 41,
   "vcs": [
     {
@@ -911,6 +911,16 @@
   ],
   "jobs": [
     {
+      "id": "getro:jobs.firstmomentum.vc:94702980",
+      "title": "VC Investment Intern (Munich or Remote) - 4-6 months from Oct 2026",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16746977-vc-investment-intern-munich-or-remote-4-6-months-from-oct-2026",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-09-25T12:12:50.838119+00:00"
+    },
+    {
       "id": "join:aenu:16746239",
       "title": "Visiting Investment Analyst (Jan 2027)",
       "location": "Berlin, Deutschland",
@@ -1078,16 +1088,6 @@
       "department": "",
       "vc": "capnamic Ventures",
       "vc_website": "https://capnamic.com/jobs",
-      "first_seen": "2026-09-18T22:40:31.782284+00:00"
-    },
-    {
-      "id": "getro:jobs.firstmomentum.vc:93023031",
-      "title": "VC Investment Intern (Munich or Remote) - 4-6 months from Oct 2026",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16696392-vc-investment-intern-munich-or-remote-4-6-months-from-oct-2026",
-      "department": "",
-      "vc": "First Momentum",
-      "vc_website": "https://jobs.firstmomentum.vc/jobs",
       "first_seen": "2026-09-18T22:40:31.782284+00:00"
     },
     {
