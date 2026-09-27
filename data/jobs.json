@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-27T03:09:53.637988+00:00",
-  "count": 41,
+  "updated_at": "2026-09-27T06:12:47.909669+00:00",
+  "count": 39,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1299,30 +1299,8 @@
       "vc": "Global Founders Capital",
       "vc_website": "https://www.globalfounders.vc",
       "first_seen": "2026-09-18T21:16:43.315271+00:00"
-    },
-    {
-      "id": "ashby:hv:2ed3faab-b1a3-4430-a45a-3f3b25df546b",
-      "title": "Investment Intern – Early Stage",
-      "location": "Berlin",
-      "url": "https://jobs.ashbyhq.com/hv/2ed3faab-b1a3-4430-a45a-3f3b25df546b",
-      "department": "Investment",
-      "vc": "HV Capital",
-      "vc_website": "https://hvcapital.com/careers",
-      "first_seen": "2026-09-18T20:48:23.574902+00:00"
-    },
-    {
-      "id": "ashby:hv:3759ca29-f782-4138-b7f0-a5532699596d",
-      "title": "Investment Intern - Growth Stage",
-      "location": "Berlin",
-      "url": "https://jobs.ashbyhq.com/hv/3759ca29-f782-4138-b7f0-a5532699596d",
-      "department": "Growth",
-      "vc": "HV Capital",
-      "vc_website": "https://hvcapital.com/careers",
-      "first_seen": "2026-09-18T20:48:23.574902+00:00"
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "HV Capital": 2
-  }
+  "empty_runs": {}
 }
