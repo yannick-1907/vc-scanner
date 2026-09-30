@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-29T21:09:59.118271+00:00",
-  "count": 41,
+  "updated_at": "2026-09-30T00:14:56.486286+00:00",
+  "count": 39,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,26 +911,6 @@
   ],
   "jobs": [
     {
-      "id": "careerpage:b554d0b6142f",
-      "title": "Technical GTM / Founders Office Intern",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/alder/jobs/rPtK6G4-technical-gtm-founders-office-intern",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-09-29T18:13:07.737098+00:00"
-    },
-    {
-      "id": "careerpage:c0f0f0fd11e1",
-      "title": "Business Development Intern",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/codingal/jobs/TVDzJVs-business-development-intern",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-09-29T18:13:07.737098+00:00"
-    },
-    {
       "id": "getro:jobs.firstmomentum.vc:94702980",
       "title": "VC Investment Intern (Munich or Remote) - 4-6 months from Oct 2026",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
@@ -1322,7 +1302,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "Y Combinator": 1
-  }
+  "empty_runs": {}
 }
