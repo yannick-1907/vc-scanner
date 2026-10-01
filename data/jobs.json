@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-09-30T21:10:23.768607+00:00",
-  "count": 39,
+  "updated_at": "2026-10-01T00:16:11.632895+00:00",
+  "count": 40,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,6 +910,16 @@
     }
   ],
   "jobs": [
+    {
+      "id": "careerpage:351a881327aa",
+      "title": "Werkstudent:in Controlling (m / w / d) - mind. 16 Wochenstunden",
+      "location": "München",
+      "url": "https://bayernkapital.de/bayern-kapital/karriere/stellenanzeige/?tx_puck_personiodetail%5Baction%5D=detail&tx_puck_personiodetail%5Bcontroller%5D=Personio&tx_puck_personiodetail%5Bid%5D=2614198&cHash=0cbcd974911377586506516e222430c1",
+      "department": "",
+      "vc": "Bayern Kapital",
+      "vc_website": "https://bayernkapital.de/bayern-kapital/karriere/",
+      "first_seen": "2026-10-01T00:16:11.632895+00:00"
+    },
     {
       "id": "getro:jobs.firstmomentum.vc:94702980",
       "title": "VC Investment Intern (Munich or Remote) - 4-6 months from Oct 2026",
