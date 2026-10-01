@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-01T18:14:32.883386+00:00",
-  "count": 40,
+  "updated_at": "2026-10-01T21:10:16.930362+00:00",
+  "count": 41,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,6 +910,16 @@
     }
   ],
   "jobs": [
+    {
+      "id": "careerpage:93bd025d6316",
+      "title": "Growth Intern (Fall, Winter cycles)",
+      "location": "Berlin",
+      "url": "https://www.ycombinator.com/companies/catchback-cards/jobs/Z1FjbKi-growth-intern-fall-winter-cycles",
+      "department": "",
+      "vc": "Y Combinator",
+      "vc_website": "https://www.ycombinator.com/jobs",
+      "first_seen": "2026-10-01T21:10:16.930362+00:00"
+    },
     {
       "id": "careerpage:351a881327aa",
       "title": "Werkstudent:in Controlling (m / w / d) - mind. 16 Wochenstunden",
