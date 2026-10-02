@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-02T06:13:08.454781+00:00",
-  "count": 41,
+  "updated_at": "2026-10-02T09:11:52.733369+00:00",
+  "count": 40,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,16 +911,6 @@
   ],
   "jobs": [
     {
-      "id": "careerpage:8b8fa47d91ca",
-      "title": "Strategic Projects Associate",
-      "location": "Berlin",
-      "url": "https://www.ycombinator.com/companies/corgi-insurance/jobs/wdBTpwK-strategic-projects-associate",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-10-02T00:14:51.501798+00:00"
-    },
-    {
       "id": "careerpage:351a881327aa",
       "title": "Werkstudent:in Controlling (m / w / d) - mind. 16 Wochenstunden",
       "location": "München",
@@ -1322,7 +1312,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "Y Combinator": 2
-  }
+  "empty_runs": {}
 }
