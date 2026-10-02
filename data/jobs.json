@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-02T12:13:12.247475+00:00",
-  "count": 40,
+  "updated_at": "2026-10-02T15:12:01.365929+00:00",
+  "count": 39,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -995,17 +995,7 @@
       "title": "Associate (m/f/d)",
       "location": "Karlsruhe",
       "url": "https://leapartners.jobs.personio.de/job/2656046",
-      "department": "Investment Management",
-      "vc": "LEA Partners",
-      "vc_website": "https://leapartners.jobs.personio.com/",
-      "first_seen": "2026-09-18T23:08:38.468141+00:00"
-    },
-    {
-      "id": "personio:leapartners:2053244",
-      "title": "Praktikant (m/w/d) Venture Capital",
-      "location": "Karlsruhe",
-      "url": "https://leapartners.jobs.personio.de/job/2053244",
-      "department": "Praktikanten",
+      "department": "Festangestellte",
       "vc": "LEA Partners",
       "vc_website": "https://leapartners.jobs.personio.com/",
       "first_seen": "2026-09-18T23:08:38.468141+00:00"
