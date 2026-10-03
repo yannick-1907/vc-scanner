@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-03T06:17:53.494027+00:00",
-  "count": 43,
+  "updated_at": "2026-10-03T09:11:41.261083+00:00",
+  "count": 39,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,46 +911,6 @@
   ],
   "jobs": [
     {
-      "id": "careerpage:981afe55e7d7",
-      "title": "GTM intern",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/nao-labs/jobs/Cgv7KB0-gtm-intern",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-10-03T00:14:09.195984+00:00"
-    },
-    {
-      "id": "careerpage:e6565a114f12",
-      "title": "Founder Fellow - GTM, Growth & Strategy",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/pennant/jobs/21lflHF-founder-fellow-gtm-growth-strategy",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-10-03T00:14:09.195984+00:00"
-    },
-    {
-      "id": "careerpage:2d505abaa109",
-      "title": "GTM Intern",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/dalus/jobs/CqZr2It-gtm-intern",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-10-03T00:14:09.195984+00:00"
-    },
-    {
-      "id": "careerpage:7942a303ced9",
-      "title": "Business Development Associate",
-      "location": "Munich",
-      "url": "https://www.ycombinator.com/companies/deepaware-ai-robotics-center-of-silicon-valley/jobs/Oz49Id3-business-development-associate",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-10-03T00:14:09.195984+00:00"
-    },
-    {
       "id": "careerpage:351a881327aa",
       "title": "Werkstudent:in Controlling (m / w / d) - mind. 16 Wochenstunden",
       "location": "München",
@@ -1342,7 +1302,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "Y Combinator": 2
-  }
+  "empty_runs": {}
 }
