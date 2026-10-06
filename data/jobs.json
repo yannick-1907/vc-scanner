@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-06T18:11:22.869183+00:00",
-  "count": 40,
+  "updated_at": "2026-10-06T21:09:53.497822+00:00",
+  "count": 39,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,16 +910,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "careerpage:8a9b7e7b7062",
-      "title": "GTM Founder's Associate",
-      "location": "Berlin",
-      "url": "https://www.ycombinator.com/companies/truemetrics/jobs/THLEzXI-gtm-founder-s-associate",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-10-06T18:11:22.869183+00:00"
-    },
     {
       "id": "careerpage:351a881327aa",
       "title": "Werkstudent:in Controlling (m / w / d) - mind. 16 Wochenstunden",
