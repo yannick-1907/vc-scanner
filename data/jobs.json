@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-08T12:14:31.792631+00:00",
-  "count": 38,
+  "updated_at": "2026-10-08T15:11:43.406652+00:00",
+  "count": 39,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,6 +910,16 @@
     }
   ],
   "jobs": [
+    {
+      "id": "personio:htgf:2834849",
+      "title": "Stelle Junior AI Engineer (m/w/d)",
+      "location": "Bonn / Berlin / München",
+      "url": "https://htgf.jobs.personio.de/job/2834849",
+      "department": "Enabling Functions",
+      "vc": "High-Tech Gründerfonds (HTGF)",
+      "vc_website": "https://www.htgf.de/careers",
+      "first_seen": "2026-10-08T15:11:43.406652+00:00"
+    },
     {
       "id": "getro:jobs.firstmomentum.vc:96269356",
       "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
