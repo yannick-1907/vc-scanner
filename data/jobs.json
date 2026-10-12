@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-12T09:14:05.377744+00:00",
-  "count": 39,
+  "updated_at": "2026-10-12T12:19:59.392879+00:00",
+  "count": 38,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1188,16 +1188,6 @@
       "department": "",
       "vc": "DN Capital",
       "vc_website": "https://dncapital.com",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
-      "id": "personio:earlybirdvc-gmbh:2715164",
-      "title": "Investment Intern (m/f/d)",
-      "location": "Munich",
-      "url": "https://earlybirdvc-gmbh.jobs.personio.de/job/2715164",
-      "department": "Investment Intern",
-      "vc": "Earlybird",
-      "vc_website": "https://earlybird.com",
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
