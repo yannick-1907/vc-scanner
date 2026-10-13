@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-13T15:14:40.407264+00:00",
-  "count": 38,
+  "updated_at": "2026-10-13T18:16:31.216952+00:00",
+  "count": 37,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -951,16 +951,6 @@
       "first_seen": "2026-10-01T00:16:11.632895+00:00"
     },
     {
-      "id": "join:aenu:16746239",
-      "title": "Visiting Investment Analyst (Jan 2027)",
-      "location": "Berlin, Deutschland",
-      "url": "https://join.com/companies/aenu/16804519-visiting-investment-analyst-jan-2027",
-      "department": "Mergers & Acquisitions",
-      "vc": "AENU",
-      "vc_website": "https://www.aenu.com/careers",
-      "first_seen": "2026-09-24T15:10:44.743477+00:00"
-    },
-    {
       "id": "getro:talent.uvcpartners.com:94505103",
       "title": "Junior Venture Scout Working Student (m/f/x)",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
@@ -1293,7 +1283,6 @@
   ],
   "errors": [],
   "empty_runs": {
-    "AENU": 2,
-    "DeepTech & Climate Fonds": 1
+    "DeepTech & Climate Fonds": 2
   }
 }
