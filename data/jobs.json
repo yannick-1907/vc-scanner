@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-13T18:16:31.216952+00:00",
-  "count": 37,
+  "updated_at": "2026-10-13T21:19:52.650073+00:00",
+  "count": 36,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1191,16 +1191,6 @@
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
-      "id": "personio:dtcf:2026430",
-      "title": "(Visiting) Analyst:in Investment Team - DTCF",
-      "location": "Bonn",
-      "url": "https://dtcf.jobs.personio.de/job/2026430",
-      "department": "Investment Team",
-      "vc": "DeepTech & Climate Fonds",
-      "vc_website": "https://dtcf.de/careers",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
       "id": "join:bonventure:16619383",
       "title": "Werkstudent:in IT / AI  (m / w / d), 8-16 Std. / Woche",
       "location": "München, Deutschland",
@@ -1282,7 +1272,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "DeepTech & Climate Fonds": 2
-  }
+  "empty_runs": {}
 }
