@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T09:25:03.979399+00:00",
+  "updated_at": "2026-10-14T12:26:48.558623+00:00",
   "count": 36,
   "vcs": [
     {
@@ -1151,26 +1151,6 @@
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
-      "id": "getro:talent.uvcpartners.com:91246988",
-      "title": "Data & AI - AI Engineer Internship (m/f/x)",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/91246988-data-ai-ai-engineer-internship-m-f-x",
-      "department": "",
-      "vc": "UVC Partners",
-      "vc_website": "https://www.uvcpartners.com/jobs",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
-      "id": "getro:talent.uvcpartners.com:86907913",
-      "title": "Unsolicited Application: Intern or Working Student for our Investment Team at UVC",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/86907913-unsolicited-application-intern-or-working-student-for-our-investment-team-at-uvc",
-      "department": "",
-      "vc": "UVC Partners",
-      "vc_website": "https://www.uvcpartners.com/jobs",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
       "id": "trakstar:dncapital:fk0u5xf",
       "title": "Associate - Berlin",
       "location": "Berlin, Germany",
@@ -1188,6 +1168,26 @@
       "department": "",
       "vc": "DN Capital",
       "vc_website": "https://dncapital.com",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:91246988",
+      "title": "Data & AI - AI Engineer Internship (m/f/x)",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/91246988-data-ai-ai-engineer-internship-m-f-x",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:86907913",
+      "title": "Unsolicited Application: Intern or Working Student for our Investment Team at UVC",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/86907913-unsolicited-application-intern-or-working-student-for-our-investment-team-at-uvc",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
@@ -1224,7 +1224,7 @@
       "id": "join:d11z:14832956",
       "title": "Internship (Investment Team) at D11Z. Ventures, a data-driven Venture Capital Fund (Munich) (m/f/d)",
       "location": "München, Deutschland",
-      "url": "https://join.com/companies/d11z/16771168-internship-investment-team-at-d11z-ventures-a-data-driven-venture-capital-fund-munich-m-f-d",
+      "url": "https://join.com/companies/d11z/16827759-internship-investment-team-at-d11z-ventures-a-data-driven-venture-capital-fund-munich-m-f-d",
       "department": "Business Analyst",
       "vc": "D11Z Ventures",
       "vc_website": "https://d11z.com/jobs",
@@ -1272,7 +1272,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "DN Capital": 1
-  }
+  "empty_runs": {}
 }
