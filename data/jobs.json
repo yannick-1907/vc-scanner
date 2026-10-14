@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:26:48.558623+00:00",
+  "updated_at": "2026-10-14T15:26:38.798138+00:00",
   "count": 36,
   "vcs": [
     {
@@ -911,6 +911,16 @@
   ],
   "jobs": [
     {
+      "id": "getro:jobs.firstmomentum.vc:96932778",
+      "title": "Visiting Associate - 6-12 months",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16796148-visiting-associate-6-12-months",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-10-14T15:26:38.798138+00:00"
+    },
+    {
       "id": "getro:jobs.firstmomentum.vc:96526100",
       "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
@@ -929,16 +939,6 @@
       "vc": "High-Tech Gründerfonds (HTGF)",
       "vc_website": "https://www.htgf.de/careers",
       "first_seen": "2026-10-08T15:11:43.406652+00:00"
-    },
-    {
-      "id": "getro:jobs.firstmomentum.vc:96269360",
-      "title": "Visiting Associate (Munich or Remote) - 6-12 months",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16796148-visiting-associate-munich-or-remote-6-12-months",
-      "department": "",
-      "vc": "First Momentum",
-      "vc_website": "https://jobs.firstmomentum.vc/jobs",
-      "first_seen": "2026-10-08T12:14:31.792631+00:00"
     },
     {
       "id": "careerpage:351a881327aa",
@@ -1194,7 +1194,7 @@
       "id": "join:bonventure:16619383",
       "title": "Werkstudent:in IT / AI  (m / w / d), 8-16 Std. / Woche",
       "location": "München, Deutschland",
-      "url": "https://join.com/companies/bonventure/16772713-werkstudent-in-it-ai-m-w-d-8-16-std-woche",
+      "url": "https://join.com/companies/bonventure/16828761-werkstudent-in-it-ai-m-w-d-8-16-std-woche",
       "department": "Anwendungsadministration",
       "vc": "Bonventure",
       "vc_website": "https://www.bonventure.de/careers",
