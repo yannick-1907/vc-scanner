@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-15T12:26:34.323221+00:00",
-  "count": 36,
+  "updated_at": "2026-10-15T15:27:02.987293+00:00",
+  "count": 37,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,6 +910,16 @@
     }
   ],
   "jobs": [
+    {
+      "id": "join:yzr:9507468",
+      "title": "Visiting Analyst - Investments & Automation",
+      "location": "München, Deutschland",
+      "url": "https://join.com/companies/yzr/16295801-visiting-analyst-investments-and-automation",
+      "department": "Business Analyst",
+      "vc": "YZR Capital",
+      "vc_website": "https://yzr-capital.com/careers",
+      "first_seen": "2026-10-15T15:27:02.987293+00:00"
+    },
     {
       "id": "getro:jobs.firstmomentum.vc:96932778",
       "title": "Visiting Associate - 6-12 months",
