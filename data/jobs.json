@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-19T08:29:52.690580+00:00",
-  "count": 37,
+  "updated_at": "2026-10-19T16:12:10.878785+00:00",
+  "count": 36,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1011,16 +1011,6 @@
       "first_seen": "2026-09-18T23:08:38.468141+00:00"
     },
     {
-      "id": "personio:leapartners:2623998",
-      "title": "Praktikum Private Equity (m/w/d) | B2B Software & AI",
-      "location": "Karlsruhe",
-      "url": "https://leapartners.jobs.personio.de/job/2623998",
-      "department": "Praktikanten",
-      "vc": "LEA Partners",
-      "vc_website": "https://leapartners.jobs.personio.com/",
-      "first_seen": "2026-09-18T23:08:38.468141+00:00"
-    },
-    {
       "id": "breezy:t-capital:17cc60ae8b68",
       "title": "Tech Fund - Visiting Analyst (m/f/d)",
       "location": "Frankfurt, DE",
@@ -1044,7 +1034,7 @@
       "id": "join:xdeck:16568603",
       "title": "Visiting Analyst (F/M/D) - Summer 2027",
       "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/xdeck/16785368-visiting-analyst-f-m-d-summer-2027",
+      "url": "https://join.com/companies/xdeck/16848358-visiting-analyst-f-m-d-summer-2027",
       "department": "Finanzen",
       "vc": "xdeck",
       "vc_website": "https://join.com/companies/xdeck",
@@ -1161,26 +1151,6 @@
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
-      "id": "getro:talent.uvcpartners.com:91246988",
-      "title": "Data & AI - AI Engineer Internship (m/f/x)",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/91246988-data-ai-ai-engineer-internship-m-f-x",
-      "department": "",
-      "vc": "UVC Partners",
-      "vc_website": "https://www.uvcpartners.com/jobs",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
-      "id": "getro:talent.uvcpartners.com:86907913",
-      "title": "Unsolicited Application: Intern or Working Student for our Investment Team at UVC",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/86907913-unsolicited-application-intern-or-working-student-for-our-investment-team-at-uvc",
-      "department": "",
-      "vc": "UVC Partners",
-      "vc_website": "https://www.uvcpartners.com/jobs",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
       "id": "trakstar:dncapital:fk0u5xf",
       "title": "Associate - Berlin",
       "location": "Berlin, Germany",
@@ -1198,6 +1168,26 @@
       "department": "",
       "vc": "DN Capital",
       "vc_website": "https://dncapital.com",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:91246988",
+      "title": "Data & AI - AI Engineer Internship (m/f/x)",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/91246988-data-ai-ai-engineer-internship-m-f-x",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:86907913",
+      "title": "Unsolicited Application: Intern or Working Student for our Investment Team at UVC",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/86907913-unsolicited-application-intern-or-working-student-for-our-investment-team-at-uvc",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
@@ -1282,7 +1272,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "DN Capital": 1
-  }
+  "empty_runs": {}
 }
