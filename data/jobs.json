@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T00:22:20.939420+00:00",
+  "updated_at": "2026-10-19T08:29:52.690580+00:00",
   "count": 37,
   "vcs": [
     {
@@ -1161,26 +1161,6 @@
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
-      "id": "trakstar:dncapital:fk0u5xf",
-      "title": "Associate - Berlin",
-      "location": "Berlin, Germany",
-      "url": "https://dncapital.hire.trakstar.com/jobs/fk0u5xf/",
-      "department": "",
-      "vc": "DN Capital",
-      "vc_website": "https://dncapital.com",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
-      "id": "trakstar:dncapital:fk0hecj",
-      "title": "Visiting Analyst (Investment Team Intern)",
-      "location": "London (UK) or Berlin (DE)",
-      "url": "https://dncapital.hire.trakstar.com/jobs/fk0hecj/",
-      "department": "",
-      "vc": "DN Capital",
-      "vc_website": "https://dncapital.com",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
       "id": "getro:talent.uvcpartners.com:91246988",
       "title": "Data & AI - AI Engineer Internship (m/f/x)",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
@@ -1198,6 +1178,26 @@
       "department": "",
       "vc": "UVC Partners",
       "vc_website": "https://www.uvcpartners.com/jobs",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "trakstar:dncapital:fk0u5xf",
+      "title": "Associate - Berlin",
+      "location": "Berlin, Germany",
+      "url": "https://dncapital.hire.trakstar.com/jobs/fk0u5xf/",
+      "department": "",
+      "vc": "DN Capital",
+      "vc_website": "https://dncapital.com",
+      "first_seen": "2026-09-18T22:23:41.558594+00:00"
+    },
+    {
+      "id": "trakstar:dncapital:fk0hecj",
+      "title": "Visiting Analyst (Investment Team Intern)",
+      "location": "London (UK) or Berlin (DE)",
+      "url": "https://dncapital.hire.trakstar.com/jobs/fk0hecj/",
+      "department": "",
+      "vc": "DN Capital",
+      "vc_website": "https://dncapital.com",
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
@@ -1282,5 +1282,7 @@
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "DN Capital": 1
+  }
 }
