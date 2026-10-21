@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T11:11:14.136829+00:00",
+  "updated_at": "2026-10-21T16:37:56.374503+00:00",
   "count": 35,
   "vcs": [
     {
@@ -911,6 +911,26 @@
   ],
   "jobs": [
     {
+      "id": "getro:jobs.firstmomentum.vc:97614996",
+      "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16855380-vc-investment-intern-munich-or-remote-4-6-months",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-10-21T16:37:56.374503+00:00"
+    },
+    {
+      "id": "getro:jobs.firstmomentum.vc:97614997",
+      "title": "Visiting Associate - 6-12 months",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16853211-visiting-associate-6-12-months",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-10-21T16:37:56.374503+00:00"
+    },
+    {
       "id": "personio:leapartners:2623998",
       "title": "Praktikum Private Equity (m/w/d) | B2B Software & AI",
       "location": "Karlsruhe",
@@ -929,26 +949,6 @@
       "vc": "YZR Capital",
       "vc_website": "https://yzr-capital.com/careers",
       "first_seen": "2026-10-15T15:27:02.987293+00:00"
-    },
-    {
-      "id": "getro:jobs.firstmomentum.vc:96932778",
-      "title": "Visiting Associate - 6-12 months",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16796148-visiting-associate-6-12-months",
-      "department": "",
-      "vc": "First Momentum",
-      "vc_website": "https://jobs.firstmomentum.vc/jobs",
-      "first_seen": "2026-10-14T15:26:38.798138+00:00"
-    },
-    {
-      "id": "getro:jobs.firstmomentum.vc:96526100",
-      "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16806696-vc-investment-intern-munich-or-remote-4-6-months",
-      "department": "",
-      "vc": "First Momentum",
-      "vc_website": "https://jobs.firstmomentum.vc/jobs",
-      "first_seen": "2026-10-10T12:11:42.631810+00:00"
     },
     {
       "id": "personio:htgf:2834849",
@@ -1234,7 +1234,7 @@
       "id": "join:realyzeventures:11974564",
       "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
       "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/realyzeventures/16805099-praktikant-in-m-w-d-venture-capital-in-koeln",
+      "url": "https://join.com/companies/realyzeventures/16857277-praktikant-in-m-w-d-venture-capital-in-koeln",
       "department": "Anlageberatung, Vermögensberatung",
       "vc": "Realyze Ventures",
       "vc_website": "https://realyzeventures.com/jobs",
@@ -1262,5 +1262,7 @@
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "Bayern Kapital": 1
+  }
 }
