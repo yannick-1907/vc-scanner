@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-23T16:29:11.703432+00:00",
-  "count": 35,
+  "updated_at": "2026-10-23T21:00:13.196701+00:00",
+  "count": 33,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1221,26 +1221,6 @@
       "first_seen": "2026-09-18T22:20:58.473604+00:00"
     },
     {
-      "id": "join:d11z:14832955",
-      "title": "Internship (Investment Team) at D11Z. Ventures, a data-driven Venture Capital Fund (Heilbronn) (m/f/d)",
-      "location": "Heilbronn, Deutschland",
-      "url": "https://join.com/companies/d11z/16836054-internship-investment-team-at-d11z-ventures-a-data-driven-venture-capital-fund-heilbronn-m-f-d",
-      "department": "Business Analyst",
-      "vc": "D11Z Ventures",
-      "vc_website": "https://d11z.com/jobs",
-      "first_seen": "2026-09-18T22:20:58.473604+00:00"
-    },
-    {
-      "id": "join:d11z:14832956",
-      "title": "Internship (Investment Team) at D11Z. Ventures, a data-driven Venture Capital Fund (Munich) (m/f/d)",
-      "location": "München, Deutschland",
-      "url": "https://join.com/companies/d11z/16827759-internship-investment-team-at-d11z-ventures-a-data-driven-venture-capital-fund-munich-m-f-d",
-      "department": "Business Analyst",
-      "vc": "D11Z Ventures",
-      "vc_website": "https://d11z.com/jobs",
-      "first_seen": "2026-09-18T22:20:58.473604+00:00"
-    },
-    {
       "id": "smartrecruiters:RocketInternet:743999828078857",
       "title": "Venture Capital Intern @ Global Founders Capital",
       "location": "Berlin, DE",
@@ -1262,7 +1242,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "D11Z Ventures": 2
-  }
+  "empty_runs": {}
 }
