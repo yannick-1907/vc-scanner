@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T03:26:14.335448+00:00",
+  "updated_at": "2026-10-23T11:01:53.004972+00:00",
   "count": 35,
   "vcs": [
     {
@@ -1211,6 +1211,16 @@
       "first_seen": "2026-09-18T22:20:58.473604+00:00"
     },
     {
+      "id": "join:realyzeventures:11974564",
+      "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
+      "location": "Köln, Deutschland",
+      "url": "https://join.com/companies/realyzeventures/16857277-praktikant-in-m-w-d-venture-capital-in-koeln",
+      "department": "Anlageberatung, Vermögensberatung",
+      "vc": "Realyze Ventures",
+      "vc_website": "https://realyzeventures.com/jobs",
+      "first_seen": "2026-09-18T22:20:58.473604+00:00"
+    },
+    {
       "id": "join:d11z:14832955",
       "title": "Internship (Investment Team) at D11Z. Ventures, a data-driven Venture Capital Fund (Heilbronn) (m/f/d)",
       "location": "Heilbronn, Deutschland",
@@ -1228,16 +1238,6 @@
       "department": "Business Analyst",
       "vc": "D11Z Ventures",
       "vc_website": "https://d11z.com/jobs",
-      "first_seen": "2026-09-18T22:20:58.473604+00:00"
-    },
-    {
-      "id": "join:realyzeventures:11974564",
-      "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
-      "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/realyzeventures/16857277-praktikant-in-m-w-d-venture-capital-in-koeln",
-      "department": "Anlageberatung, Vermögensberatung",
-      "vc": "Realyze Ventures",
-      "vc_website": "https://realyzeventures.com/jobs",
       "first_seen": "2026-09-18T22:20:58.473604+00:00"
     },
     {
@@ -1262,5 +1262,7 @@
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "D11Z Ventures": 1
+  }
 }
