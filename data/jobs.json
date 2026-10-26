@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-26T12:16:55.887313+00:00",
-  "count": 32,
+  "updated_at": "2026-10-26T20:18:19.820249+00:00",
+  "count": 31,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -952,7 +952,7 @@
     },
     {
       "id": "personio:htgf:2834849",
-      "title": "Stelle Junior AI Engineer (m/w/d)",
+      "title": "Junior AI Engineer (m/w/d)",
       "location": "Bonn / Berlin / München",
       "url": "https://htgf.jobs.personio.de/job/2834849",
       "department": "Enabling Functions",
@@ -1181,6 +1181,16 @@
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
+      "id": "join:realyzeventures:11974564",
+      "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
+      "location": "Köln, Deutschland",
+      "url": "https://join.com/companies/realyzeventures/16857277-praktikant-in-m-w-d-venture-capital-in-koeln",
+      "department": "Anlageberatung, Vermögensberatung",
+      "vc": "Realyze Ventures",
+      "vc_website": "https://realyzeventures.com/jobs",
+      "first_seen": "2026-09-18T22:20:58.473604+00:00"
+    },
+    {
       "id": "join:bonventure:16619383",
       "title": "Werkstudent:in IT / AI  (m / w / d), 8-16 Std. / Woche",
       "location": "München, Deutschland",
@@ -1201,16 +1211,6 @@
       "first_seen": "2026-09-18T22:20:58.473604+00:00"
     },
     {
-      "id": "join:realyzeventures:11974564",
-      "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
-      "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/realyzeventures/16857277-praktikant-in-m-w-d-venture-capital-in-koeln",
-      "department": "Anlageberatung, Vermögensberatung",
-      "vc": "Realyze Ventures",
-      "vc_website": "https://realyzeventures.com/jobs",
-      "first_seen": "2026-09-18T22:20:58.473604+00:00"
-    },
-    {
       "id": "smartrecruiters:RocketInternet:743999828078857",
       "title": "Venture Capital Intern @ Global Founders Capital",
       "location": "Berlin, DE",
@@ -1219,18 +1219,10 @@
       "vc": "Global Founders Capital",
       "vc_website": "https://www.globalfounders.vc",
       "first_seen": "2026-09-18T21:16:43.315271+00:00"
-    },
-    {
-      "id": "smartrecruiters:RocketInternet:743999752663004",
-      "title": "Growth & Private Equity Working Student (m/f/d) @ Global Founders Capital",
-      "location": "Munich, DE",
-      "url": "https://jobs.smartrecruiters.com/RocketInternet/743999752663004",
-      "department": "",
-      "vc": "Global Founders Capital",
-      "vc_website": "https://www.globalfounders.vc",
-      "first_seen": "2026-09-18T21:16:43.315271+00:00"
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "Bonventure": 1
+  }
 }
