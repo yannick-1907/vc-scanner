@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-27T08:39:09.153958+00:00",
-  "count": 29,
+  "updated_at": "2026-10-27T15:07:49.814135+00:00",
+  "count": 31,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,6 +910,26 @@
     }
   ],
   "jobs": [
+    {
+      "id": "careerpage:8be8b8ef3dc4",
+      "title": "Investment Relations Analyst/AssociateLondon, Munich or Berlin05.12.2026Read more",
+      "location": "Berlin",
+      "url": "https://www.worldfund.vc/jobs/investor-relations-analyst-associate",
+      "department": "",
+      "vc": "World Fund",
+      "vc_website": "https://www.worldfund.vc/career",
+      "first_seen": "2026-10-27T15:07:49.814135+00:00"
+    },
+    {
+      "id": "careerpage:d8e84592511d",
+      "title": "Visiting Analyst (Scientific Background)Munich, Germany05.12.2026Read more",
+      "location": "Munich",
+      "url": "https://www.worldfund.vc/jobs/visiting-analyst",
+      "department": "",
+      "vc": "World Fund",
+      "vc_website": "https://www.worldfund.vc/career",
+      "first_seen": "2026-10-27T15:07:49.814135+00:00"
+    },
     {
       "id": "getro:jobs.firstmomentum.vc:97614996",
       "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
