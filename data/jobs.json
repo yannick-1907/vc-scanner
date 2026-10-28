@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-28T12:08:52.234135+00:00",
-  "count": 32,
+  "updated_at": "2026-10-28T20:04:15.208931+00:00",
+  "count": 31,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -999,16 +999,6 @@
       "vc": "Bayern Kapital",
       "vc_website": "https://bayernkapital.de/bayern-kapital/karriere/",
       "first_seen": "2026-10-01T00:16:11.632895+00:00"
-    },
-    {
-      "id": "getro:talent.uvcpartners.com:94505103",
-      "title": "Junior Venture Scout Working Student (m/f/x)",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/94505103-junior-venture-scout-working-student-m-f-x",
-      "department": "",
-      "vc": "UVC Partners",
-      "vc_website": "https://www.uvcpartners.com/jobs",
-      "first_seen": "2026-09-24T09:10:19.956292+00:00"
     },
     {
       "id": "greenhouse:generalatlantic:6205669004",
