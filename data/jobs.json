@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-28T04:03:28.546454+00:00",
-  "count": 31,
+  "updated_at": "2026-10-28T12:08:52.234135+00:00",
+  "count": 32,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,6 +911,16 @@
   ],
   "jobs": [
     {
+      "id": "recruitee:anandaventuresgmbh:1716890",
+      "title": "Finance & Operations Intern (m/f/d) - Start January 2027 or earlier",
+      "location": "Munich, Bayern, Germany",
+      "url": "https://anandaventuresgmbh.recruitee.com/o/finance-operations-intern-mfd-start-january-2027-or-earlier",
+      "department": "Finance",
+      "vc": "Ananda Impact Ventures",
+      "vc_website": "https://ananda.vc",
+      "first_seen": "2026-10-28T12:08:52.234135+00:00"
+    },
+    {
       "id": "careerpage:8be8b8ef3dc4",
       "title": "Investment Relations Analyst/AssociateLondon, Munich or Berlin05.12.2026Read more",
       "location": "Berlin",
@@ -1142,9 +1152,9 @@
     },
     {
       "id": "recruitee:anandaventuresgmbh:355378",
-      "title": "(Visiting) Analyst (M/F/D) - Munich 2026",
+      "title": "(Visiting) Analyst (m/f/d) - Munich",
       "location": "Munich, Bayern, Deutschland",
-      "url": "https://anandaventuresgmbh.recruitee.com/o/visiting-analyst-mfd-munich-2026",
+      "url": "https://anandaventuresgmbh.recruitee.com/o/visiting-analyst-mfd-munich",
       "department": null,
       "vc": "Ananda Impact Ventures",
       "vc_website": "https://ananda.vc",
