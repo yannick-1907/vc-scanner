@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-03T05:24:33.958117+00:00",
-  "count": 30,
+  "updated_at": "2026-11-03T13:39:03.872646+00:00",
+  "count": 31,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,6 +911,26 @@
   ],
   "jobs": [
     {
+      "id": "getro:talent.uvcpartners.com:98746069",
+      "title": "Junior Investor Analyst (Intelligence) | Venture Capital | Werkstudent (m/w/d)",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/98746069-junior-investor-analyst-intelligence-venture-capital-werkstudent-m-w-d",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
+      "first_seen": "2026-11-03T13:39:03.872646+00:00"
+    },
+    {
+      "id": "getro:talent.uvcpartners.com:91246988",
+      "title": "Data & AI - AI Engineer Internship (m/f/x)",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://talent.uvcpartners.com/companies/uvc-partners-2/jobs/91246988-data-ai-ai-engineer-internship-m-f-x",
+      "department": "",
+      "vc": "UVC Partners",
+      "vc_website": "https://www.uvcpartners.com/jobs",
+      "first_seen": "2026-11-03T13:39:03.872646+00:00"
+    },
+    {
       "id": "careerpage:3bd84654f656",
       "title": "Investor Relations Analyst/AssociateLondon, Munich or Berlin05.12.2026Read more",
       "location": "Berlin",
@@ -1138,16 +1158,6 @@
       "department": null,
       "vc": "Ananda Impact Ventures",
       "vc_website": "https://ananda.vc",
-      "first_seen": "2026-09-18T22:23:41.558594+00:00"
-    },
-    {
-      "id": "breezy:dtcp:3479fa4251d5",
-      "title": "Intern (m/f/d) | Strategy Office",
-      "location": "Frankfurt am Main, DE",
-      "url": "https://dtcp.breezy.hr/p/3479fa4251d5-intern-m-f-d-strategy-office",
-      "department": "",
-      "vc": "Deutsche Telekom Capital Partners",
-      "vc_website": "https://www.dtcp.capital/careers",
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
