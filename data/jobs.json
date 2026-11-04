@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-04T01:02:15.379213+00:00",
-  "count": 31,
+  "updated_at": "2026-11-04T19:22:30.452414+00:00",
+  "count": 32,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,6 +911,16 @@
   ],
   "jobs": [
     {
+      "id": "personio:htgf:2875103",
+      "title": "Junior Analyst:in Life Science & Chemie",
+      "location": "Bonn",
+      "url": "https://htgf.jobs.personio.de/job/2875103",
+      "department": "Komitee 2",
+      "vc": "High-Tech Gründerfonds (HTGF)",
+      "vc_website": "https://www.htgf.de/careers",
+      "first_seen": "2026-11-04T19:22:30.452414+00:00"
+    },
+    {
       "id": "getro:talent.uvcpartners.com:98746069",
       "title": "Junior Investor Analyst (Intelligence) | Venture Capital | Werkstudent (m/w/d)",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
@@ -1204,7 +1214,7 @@
       "id": "join:realyzeventures:11974564",
       "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
       "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/realyzeventures/16857277-praktikant-in-m-w-d-venture-capital-in-koeln",
+      "url": "https://join.com/companies/realyzeventures/16912107-praktikant-in-m-w-d-venture-capital-in-koeln",
       "department": "Anlageberatung, Vermögensberatung",
       "vc": "Realyze Ventures",
       "vc_website": "https://realyzeventures.com/jobs",
