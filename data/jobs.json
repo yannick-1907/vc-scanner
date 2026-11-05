@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T10:21:21.509963+00:00",
+  "updated_at": "2026-11-05T19:29:56.345802+00:00",
   "count": 32,
   "vcs": [
     {
@@ -911,6 +911,16 @@
   ],
   "jobs": [
     {
+      "id": "careerpage:5ba7982d32b9",
+      "title": "Visiting Investment Analyst (m/f/d)",
+      "location": "Köln",
+      "url": "https://capnamic.com/post/join-our-team-as-visiting-investment-analyst",
+      "department": "",
+      "vc": "capnamic Ventures",
+      "vc_website": "https://capnamic.com/jobs",
+      "first_seen": "2026-11-05T19:29:56.345802+00:00"
+    },
+    {
       "id": "personio:htgf:2875103",
       "title": "Junior Analyst:in Life Science & Chemie",
       "location": "Bonn",
@@ -1019,16 +1029,6 @@
       "vc": "High-Tech Gründerfonds (HTGF)",
       "vc_website": "https://www.htgf.de/careers",
       "first_seen": "2026-10-08T15:11:43.406652+00:00"
-    },
-    {
-      "id": "careerpage:351a881327aa",
-      "title": "Werkstudent:in Controlling (m / w / d) - mind. 16 Wochenstunden",
-      "location": "München",
-      "url": "https://bayernkapital.de/bayern-kapital/karriere/stellenanzeige/?tx_puck_personiodetail%5Baction%5D=detail&tx_puck_personiodetail%5Bcontroller%5D=Personio&tx_puck_personiodetail%5Bid%5D=2614198&cHash=0cbcd974911377586506516e222430c1",
-      "department": "",
-      "vc": "Bayern Kapital",
-      "vc_website": "https://bayernkapital.de/bayern-kapital/karriere/",
-      "first_seen": "2026-10-01T00:16:11.632895+00:00"
     },
     {
       "id": "greenhouse:generalatlantic:6205669004",
@@ -1232,7 +1232,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "Bayern Kapital": 2
-  }
+  "empty_runs": {}
 }
