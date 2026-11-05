@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T19:22:30.452414+00:00",
+  "updated_at": "2026-11-05T01:17:21.510082+00:00",
   "count": 32,
   "vcs": [
     {
@@ -1232,5 +1232,7 @@
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "Bayern Kapital": 1
+  }
 }
