@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-06T18:54:16.515744+00:00",
-  "count": 36,
+  "updated_at": "2026-11-07T00:37:32.730119+00:00",
+  "count": 32,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -910,46 +910,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "careerpage:2c29dd27010e",
-      "title": "Operations Associate",
-      "location": "Berlin",
-      "url": "https://www.ycombinator.com/companies/corgi/jobs/QkzDlzY-operations-associate",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-11-06T18:54:16.515744+00:00"
-    },
-    {
-      "id": "careerpage:b95651fe72fe",
-      "title": "Product Operations Analyst",
-      "location": "Berlin",
-      "url": "https://www.ycombinator.com/companies/numeral/jobs/tOxaD5n-product-operations-analyst",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-11-06T18:54:16.515744+00:00"
-    },
-    {
-      "id": "careerpage:87be48d18cb7",
-      "title": "Founders' Associate (full-time)",
-      "location": "Berlin",
-      "url": "https://www.ycombinator.com/companies/dexter/jobs/R0wwdeh-founders-associate-full-time",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-11-06T18:54:16.515744+00:00"
-    },
-    {
-      "id": "careerpage:ee42d7fd8288",
-      "title": "Laminar | Intern",
-      "location": "Berlin",
-      "url": "https://www.ycombinator.com/companies/laminar-com/jobs/fYFdMgU-laminar-intern",
-      "department": "",
-      "vc": "Y Combinator",
-      "vc_website": "https://www.ycombinator.com/jobs",
-      "first_seen": "2026-11-06T18:54:16.515744+00:00"
-    },
     {
       "id": "careerpage:5ba7982d32b9",
       "title": "Visiting Investment Analyst (m/f/d)",
