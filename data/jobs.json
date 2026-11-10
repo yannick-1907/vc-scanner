@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-09T21:56:32.735133+00:00",
-  "count": 32,
+  "updated_at": "2026-11-10T05:58:37.642616+00:00",
+  "count": 31,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1041,16 +1041,6 @@
       "first_seen": "2026-09-23T18:12:46.821708+00:00"
     },
     {
-      "id": "recruitee:pointnine:2725720",
-      "title": "Junior Fund Operations Associate  (f/m/d)",
-      "location": "Berlin, Berlin, Germany",
-      "url": "https://pointnine.recruitee.com/o/junior-fund-operations-associate-fmd",
-      "department": "Operations/ Legal",
-      "vc": "Point Nine",
-      "vc_website": "https://www.pointnine.com",
-      "first_seen": "2026-09-21T15:09:16.584404+00:00"
-    },
-    {
       "id": "careerpage:9525f716bcfe",
       "title": "Visiting Analyst - Science (f/m/d)",
       "location": "Zurich/Berlin",
@@ -1232,7 +1222,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "Point Nine": 2
-  }
+  "empty_runs": {}
 }
