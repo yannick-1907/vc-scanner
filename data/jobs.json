@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T14:44:08.161377+00:00",
+  "updated_at": "2026-11-10T21:11:53.750800+00:00",
   "count": 31,
   "vcs": [
     {
@@ -1014,7 +1014,7 @@
       "id": "join:yzr:9507468",
       "title": "Visiting Analyst - Investments & Automation",
       "location": "München, Deutschland",
-      "url": "https://join.com/companies/yzr/16889807-visiting-analyst-investments-and-automation",
+      "url": "https://join.com/companies/yzr/16936150-visiting-analyst-investments-and-automation",
       "department": "Business Analyst",
       "vc": "YZR Capital",
       "vc_website": "https://yzr-capital.com/careers",
@@ -1071,16 +1071,6 @@
       "first_seen": "2026-09-18T23:08:38.468141+00:00"
     },
     {
-      "id": "join:xdeck:16568603",
-      "title": "Visiting Analyst (F/M/D) - Summer 2027",
-      "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/xdeck/16900752-visiting-analyst-f-m-d-summer-2027",
-      "department": "Finanzen",
-      "vc": "xdeck",
-      "vc_website": "https://join.com/companies/xdeck",
-      "first_seen": "2026-09-18T23:08:38.468141+00:00"
-    },
-    {
       "id": "careerpage:c32d833e1bec",
       "title": "STEM Internship in Venture Capital (f/m/x)",
       "location": "Köln",
@@ -1098,6 +1088,16 @@
       "department": "",
       "vc": "DvH Ventures (Dieter von Holtzbrinck Ventures)",
       "vc_website": "https://dvhventures.de/jobs/",
+      "first_seen": "2026-09-18T23:08:38.468141+00:00"
+    },
+    {
+      "id": "join:xdeck:16568603",
+      "title": "Visiting Analyst (F/M/D) - Summer 2027",
+      "location": "Köln, Deutschland",
+      "url": "https://join.com/companies/xdeck/16900752-visiting-analyst-f-m-d-summer-2027",
+      "department": "Finanzen",
+      "vc": "xdeck",
+      "vc_website": "https://join.com/companies/xdeck",
       "first_seen": "2026-09-18T23:08:38.468141+00:00"
     },
     {
@@ -1222,5 +1222,7 @@
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "xdeck": 1
+  }
 }
