@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-11T04:46:30.676044+00:00",
-  "count": 31,
+  "updated_at": "2026-11-11T13:35:23.361823+00:00",
+  "count": 30,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1091,16 +1091,6 @@
       "first_seen": "2026-09-18T23:08:38.468141+00:00"
     },
     {
-      "id": "join:xdeck:16568603",
-      "title": "Visiting Analyst (F/M/D) - Summer 2027",
-      "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/xdeck/16900752-visiting-analyst-f-m-d-summer-2027",
-      "department": "Finanzen",
-      "vc": "xdeck",
-      "vc_website": "https://join.com/companies/xdeck",
-      "first_seen": "2026-09-18T23:08:38.468141+00:00"
-    },
-    {
       "id": "careerpage:9f437a2c747f",
       "title": "Visiting Analyst (m/w/d)",
       "location": "Köln",
@@ -1223,6 +1213,6 @@
   ],
   "errors": [],
   "empty_runs": {
-    "xdeck": 2
+    "Realyze Ventures": 1
   }
 }
