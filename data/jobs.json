@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T05:08:17.154886+00:00",
+  "updated_at": "2026-11-13T13:56:47.461132+00:00",
   "count": 30,
   "vcs": [
     {
@@ -911,6 +911,26 @@
   ],
   "jobs": [
     {
+      "id": "getro:jobs.firstmomentum.vc:99713503",
+      "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16909464-vc-investment-intern-munich-or-remote-4-6-months",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-11-13T13:56:47.461132+00:00"
+    },
+    {
+      "id": "getro:jobs.firstmomentum.vc:99713509",
+      "title": "Visiting Associate - 6-12 months",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16908678-visiting-associate-6-12-months",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-11-13T13:56:47.461132+00:00"
+    },
+    {
       "id": "careerpage:5ba7982d32b9",
       "title": "Visiting Investment Analyst (m/f/d)",
       "location": "Köln",
@@ -979,26 +999,6 @@
       "vc": "World Fund",
       "vc_website": "https://www.worldfund.vc/career",
       "first_seen": "2026-10-27T15:07:49.814135+00:00"
-    },
-    {
-      "id": "getro:jobs.firstmomentum.vc:97614997",
-      "title": "Visiting Associate - 6-12 months",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16853211-visiting-associate-6-12-months",
-      "department": "",
-      "vc": "First Momentum",
-      "vc_website": "https://jobs.firstmomentum.vc/jobs",
-      "first_seen": "2026-10-21T16:37:56.374503+00:00"
-    },
-    {
-      "id": "getro:jobs.firstmomentum.vc:97614996",
-      "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16855380-vc-investment-intern-munich-or-remote-4-6-months",
-      "department": "",
-      "vc": "First Momentum",
-      "vc_website": "https://jobs.firstmomentum.vc/jobs",
-      "first_seen": "2026-10-21T16:37:56.374503+00:00"
     },
     {
       "id": "personio:leapartners:2623998",
@@ -1212,5 +1212,8 @@
     }
   ],
   "errors": [],
-  "empty_runs": {}
+  "empty_runs": {
+    "Realyze Ventures": 1,
+    "YZR Capital": 1
+  }
 }
