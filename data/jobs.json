@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-13T21:10:49.535906+00:00",
-  "count": 30,
+  "updated_at": "2026-11-14T04:58:58.888976+00:00",
+  "count": 28,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,20 +911,20 @@
   ],
   "jobs": [
     {
-      "id": "getro:jobs.firstmomentum.vc:99713509",
-      "title": "Visiting Associate - 6-12 months",
+      "id": "getro:jobs.firstmomentum.vc:99713503",
+      "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16908678-visiting-associate-6-12-months",
+      "url": "https://join.com/companies/firstmomentum12/16909464-vc-investment-intern-munich-or-remote-4-6-months",
       "department": "",
       "vc": "First Momentum",
       "vc_website": "https://jobs.firstmomentum.vc/jobs",
       "first_seen": "2026-11-13T13:56:47.461132+00:00"
     },
     {
-      "id": "getro:jobs.firstmomentum.vc:99713503",
-      "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
+      "id": "getro:jobs.firstmomentum.vc:99713509",
+      "title": "Visiting Associate - 6-12 months",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16909464-vc-investment-intern-munich-or-remote-4-6-months",
+      "url": "https://join.com/companies/firstmomentum12/16908678-visiting-associate-6-12-months",
       "department": "",
       "vc": "First Momentum",
       "vc_website": "https://jobs.firstmomentum.vc/jobs",
@@ -1009,16 +1009,6 @@
       "vc": "LEA Partners",
       "vc_website": "https://leapartners.jobs.personio.com/",
       "first_seen": "2026-10-20T16:22:22.687497+00:00"
-    },
-    {
-      "id": "join:yzr:9507468",
-      "title": "Visiting Analyst - Investments & Automation",
-      "location": "München, Deutschland",
-      "url": "https://join.com/companies/yzr/16936150-visiting-analyst-investments-and-automation",
-      "department": "Business Analyst",
-      "vc": "YZR Capital",
-      "vc_website": "https://yzr-capital.com/careers",
-      "first_seen": "2026-10-15T15:27:02.987293+00:00"
     },
     {
       "id": "personio:htgf:2834849",
@@ -1191,16 +1181,6 @@
       "first_seen": "2026-09-18T22:23:41.558594+00:00"
     },
     {
-      "id": "join:realyzeventures:11974564",
-      "title": "Praktikant:In (m/w/d) Venture Capital in KÖLN",
-      "location": "Köln, Deutschland",
-      "url": "https://join.com/companies/realyzeventures/16912107-praktikant-in-m-w-d-venture-capital-in-koeln",
-      "department": "Anlageberatung, Vermögensberatung",
-      "vc": "Realyze Ventures",
-      "vc_website": "https://realyzeventures.com/jobs",
-      "first_seen": "2026-09-18T22:20:58.473604+00:00"
-    },
-    {
       "id": "smartrecruiters:RocketInternet:743999828078857",
       "title": "Venture Capital Intern @ Global Founders Capital",
       "location": "Berlin, DE",
@@ -1212,8 +1192,5 @@
     }
   ],
   "errors": [],
-  "empty_runs": {
-    "Realyze Ventures": 2,
-    "YZR Capital": 2
-  }
+  "empty_runs": {}
 }
