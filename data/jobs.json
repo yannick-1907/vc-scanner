@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-17T06:36:44.942218+00:00",
-  "count": 28,
+  "updated_at": "2026-11-17T18:08:39.656101+00:00",
+  "count": 29,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -911,20 +911,30 @@
   ],
   "jobs": [
     {
+      "id": "getro:jobs.firstmomentum.vc:99988131",
+      "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16956653-vc-investment-intern-munich-or-remote-4-6-months",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-11-17T18:08:39.656101+00:00"
+    },
+    {
+      "id": "getro:jobs.firstmomentum.vc:99988130",
+      "title": "Platform Associate (m/f/d): Talent, Growth, Content & AI Workflows",
+      "location": "Berlin, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16958415-platform-associate-m-f-d-talent-growth-content-and-ai-workflows",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-11-17T18:08:39.656101+00:00"
+    },
+    {
       "id": "getro:jobs.firstmomentum.vc:99713509",
       "title": "Visiting Associate - 6-12 months",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
       "url": "https://join.com/companies/firstmomentum12/16908678-visiting-associate-6-12-months",
-      "department": "",
-      "vc": "First Momentum",
-      "vc_website": "https://jobs.firstmomentum.vc/jobs",
-      "first_seen": "2026-11-13T13:56:47.461132+00:00"
-    },
-    {
-      "id": "getro:jobs.firstmomentum.vc:99713503",
-      "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16909464-vc-investment-intern-munich-or-remote-4-6-months",
       "department": "",
       "vc": "First Momentum",
       "vc_website": "https://jobs.firstmomentum.vc/jobs",
