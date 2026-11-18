@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-18T02:44:09.045050+00:00",
-  "count": 29,
+  "updated_at": "2026-11-18T11:09:39.240813+00:00",
+  "count": 28,
   "vcs": [
     {
       "name": "1745 Ventures",
@@ -1019,16 +1019,6 @@
       "vc": "LEA Partners",
       "vc_website": "https://leapartners.jobs.personio.com/",
       "first_seen": "2026-10-20T16:22:22.687497+00:00"
-    },
-    {
-      "id": "personio:htgf:2834849",
-      "title": "Junior AI Engineer (m/w/d)",
-      "location": "Bonn / Berlin / München",
-      "url": "https://htgf.jobs.personio.de/job/2834849",
-      "department": "Enabling Functions",
-      "vc": "High-Tech Gründerfonds (HTGF)",
-      "vc_website": "https://www.htgf.de/careers",
-      "first_seen": "2026-10-08T15:11:43.406652+00:00"
     },
     {
       "id": "greenhouse:generalatlantic:6205669004",
