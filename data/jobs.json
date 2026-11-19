@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T11:08:13.268185+00:00",
+  "updated_at": "2026-11-19T19:57:17.886031+00:00",
   "count": 28,
   "vcs": [
     {
@@ -911,6 +911,16 @@
   ],
   "jobs": [
     {
+      "id": "getro:jobs.firstmomentum.vc:100286880",
+      "title": "Visiting Associate - 6-12 months",
+      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
+      "url": "https://join.com/companies/firstmomentum12/16963917-visiting-associate-6-12-months",
+      "department": "",
+      "vc": "First Momentum",
+      "vc_website": "https://jobs.firstmomentum.vc/jobs",
+      "first_seen": "2026-11-19T19:57:17.886031+00:00"
+    },
+    {
       "id": "getro:jobs.firstmomentum.vc:99988131",
       "title": "VC Investment Intern (Munich or Remote) - 4-6 months",
       "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
@@ -929,16 +939,6 @@
       "vc": "First Momentum",
       "vc_website": "https://jobs.firstmomentum.vc/jobs",
       "first_seen": "2026-11-17T18:08:39.656101+00:00"
-    },
-    {
-      "id": "getro:jobs.firstmomentum.vc:99713509",
-      "title": "Visiting Associate - 6-12 months",
-      "location": "Munich, Germany, Upper Bavaria, Germany, Bavaria, Germany, Germany, Europe",
-      "url": "https://join.com/companies/firstmomentum12/16908678-visiting-associate-6-12-months",
-      "department": "",
-      "vc": "First Momentum",
-      "vc_website": "https://jobs.firstmomentum.vc/jobs",
-      "first_seen": "2026-11-13T13:56:47.461132+00:00"
     },
     {
       "id": "careerpage:5ba7982d32b9",
